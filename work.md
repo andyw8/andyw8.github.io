@@ -20,7 +20,7 @@ permalink: /work/
 * [HowAreYou] (Rails, Sinatra) (2012)
 * [BBC London Olympics] (as Developer-in-Test) (2012)
 * [BBC Weather] (as Developer-in-Test) (2011)
-* [Chromaroma] (Rails) (2010)
+* [Chromaroma] (with [Dynamic50]) (Rails) (2010)
 * [Top Targets] (Rails) (2009)
 * [SIMUL8] (Perl) (2007)
 * Strathclyde Telegraph student newspaper (volunteer) (PHP) (2006)
@@ -37,8 +37,9 @@ permalink: /work/
 
 ### Open Source
 
+* [codeclimate-engine-rb](https://github.com/andyw8/codeclimate-engine-rb) (Ruby)
+* [techradar.io](https://github.com/andyw8/techradar.io) (Ruby, Rails)
 * [do_by](https://github.com/andyw8/do_by) (Ruby)
-* [rubymotion_generators](https://github.com/andyw8/rubymotion_generators) (Ruby)
 * [capybara-page_object](https://github.com/andyw8/capybara-page-object) (Ruby)
 
 See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other OSS contributions.
@@ -52,6 +53,7 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 * [cheepr.com (on archive.org)] (Rails) (2007)
 * [NeoForums (on archive.org)] (ASP) (2000)
 
+[Dynamic50]: https://github.com/dynamic50
 [We Are Friday]: http://wearefriday.com
 [CDP]: http://cdp.net
 [The People's Operator]: http://www.tpo.com
