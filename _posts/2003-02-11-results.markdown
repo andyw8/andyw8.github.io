@@ -1,0 +1,21 @@
+---
+title: Results
+layout: post
+published: false
+---
+Got my test marks through from last semester today.
+I already knew them roughly but these are the official ones:
+
+```
+Class  Title                       Result  %   Credits
+------------------------------------------------------
+11650  Mathematics 1b              Exempt  81  1.5
+12133  General Physics 1           Pass    68  1.0
+12156  Classical Physics           Pass    70  2.0
+53101  Introduction To Statistics  Pass    67  1.0
+```
+
+The pass mark is 40% so I feel I've done quite well.
+
+I'm not sure why Maths is the only one which says 'Exempt', since I got
+exemption from them all.

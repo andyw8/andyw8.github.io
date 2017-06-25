@@ -1,0 +1,15 @@
+---
+title: 250GB!
+layout: post
+published: false
+---
+I've ordered one of these 250GB FireWire drive from
+[Insight](http://www.insight.com).
+
+It's £245 which is a great price for a drive that size, especially FireWire. In
+fact it's cheaper than a standard internal drive of the same spec. I suspect
+it's a misprice but hopefully they won't realise!
+
+I plan to use it for storing music using the lossless
+[FLAC](http://flac.sourceforge.net/) format. It should
+hold about 750 CD albums.
