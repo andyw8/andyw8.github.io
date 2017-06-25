@@ -44,7 +44,7 @@ permalink: /work/
 
 See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other OSS contributions.
 
-### Past Personal Projects
+### Retired Personal Projects
 
 * StreetFoodApp UK (iPhone App - RubyMotion, backend - Rails) (2013)
 * [TfL Unified REST API] (Ruby, Sinatra) (2012)
