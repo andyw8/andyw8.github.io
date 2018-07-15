@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Preventing false positives in RSpec"
+title:  "Preventing False Positives in RSpec"
 date:   2018-07-15
 published: true
 ---
