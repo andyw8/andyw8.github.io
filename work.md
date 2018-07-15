@@ -6,6 +6,7 @@ permalink: /work/
 
 ### Personal Projects
 
+* [GetThingsRight] (Rails) (2018)
 * [KitchenNumbers] (Rails) (2015)
 * [techradar.io] (Rails) (2014)
 * [Continuous Quality] (Writing) (2014)
@@ -58,6 +59,7 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 [CDP]: http://cdp.net
 [The People's Operator]: http://www.tpo.com
 [Continuous Quality]: http://continuous-quality.herokuapp.com
+[GetThingsRight]: https://www.getthingsright.app/
 [techradar.io]: http://techradar.io/
 [HowAreYou]: https://web.archive.org/web/20141220050254/https://en-gb.howareyou.com/
 [KitchenNumbers]: http://numbers.kitchen
