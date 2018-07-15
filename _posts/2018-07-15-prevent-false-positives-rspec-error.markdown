@@ -45,7 +45,7 @@ We push the branch, see it passes in Travis or whatever CI is in use, then merge
 
 Do you see it? We're calling `run` as a instance method, but it's actually a class method.
 
-A runtime error _is_ being raised, but it's not the we were expecting.
+An error _is_ being raised, but it's not the we were expecting.
 
 If we were using RSpec 3 or newer, you might have spotted a lengthy warning displayed as part of the test output:
 
