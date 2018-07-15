@@ -93,7 +93,7 @@ You could miss genuine bugs in the code.
 The default behaviour of `on_potential_false_positives` is `:warn`, which displays a message like we saw above.
 
 However, there's a better way to configure this.
-By setting it to `:raise`, your test will fail unless unless you specify the error type when using `raise_error`.
+By setting it to `:raise`, your test will fail unless you specify the error type when using `raise_error`.
 
 This will help to prevent future problems. If you have a large test suite, it might take some effort to update your test suite, but it's worth it.
 
