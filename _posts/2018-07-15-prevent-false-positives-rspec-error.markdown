@@ -50,7 +50,15 @@ A runtime error _is_ being raised, but it's not the we were expecting.
 If we were using RSpec 3 or newer, you might have spotted a lengthy warning displayed as part of the test output:
 
 ```
-WARNING: Using the `raise_error` matcher without providing a specific error or message risks false positives, since `raise_error` will match when Ruby raises a `NoMethodError`, `NameError` or `ArgumentError`, potentially allowing the expectation to pass without even executing the method you are intending to call. Actual error raised was #<NoMethodError: undefined method `run' for #<Hello:0x007fdc39b50118>>. Instead consider providing a specific error class or message. This message can be suppressed by setting: `RSpec::Expectations.configuration.on_potential_false_positives = :nothing`. Called from spec/hello_spec.rb:11:in `block (2 levels) in <top (required)>'.
+WARNING: Using the `raise_error` matcher without providing a specific error or
+message risks false positives, since `raise_error` will match when Ruby raises
+a `NoMethodError`, `NameError` or `ArgumentError`, potentially allowing the
+expectation to pass without even executing the method you are intending to call.
+Actual error raised was #<NoMethodError: undefined method `run' for
+#<Hello:0x007fdc39b50118>>. Instead consider providing a specific error class or
+message. This message can be suppressed by setting:
+`RSpec::Expectations.configuration.on_potential_false_positives = :nothing`.
+Called from spec/hello_spec.rb:11:in `block (2 levels) in <top (required)>'.
 ```
 
 But on a large test suite which already outputs a lot of warnings, it's easy to miss that.
@@ -76,13 +84,14 @@ expected ArgumentError with "No name given", got #<NoMethodError: undefined meth
 
 # Configuration
 
-You might have noticed that the RSpec out also describes how to suppress the warning message.
+You might have noticed that the RSpec output also describes how to suppress these warning messages.
 This is dangerous and you shouldn't do that.
 You could miss genuine bugs in the code.
 
-The default behaviour of `configuration.on_potential_false_positives` is `:warn`, which displays a message like we saw above.
+The default behaviour of `on_potential_false_positives` is `:warn`, which displays a message like we saw above.
 
-However, there's a better way to configure this. By setting it to `:raise`, you're test will fail unless unless you specify the error type when using `raise_error`.
+However, there's a better way to configure this.
+By setting it to `:raise`, your test will fail unless unless you specify the error type when using `raise_error`.
 
 This will help to prevent future problems. If you have a large test suite, it might take some effort to update your test suite, but it's worth it.
 

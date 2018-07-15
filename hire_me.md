@@ -9,7 +9,7 @@ My preferred way to work is to augment a team as a developer/coach, in order to 
 
 [Contact Me](contact) for my availability and rates.
 
-Below are examples of some of the area I can advise on:
+Below are examples of some of the areas I can advise on:
 
 ### Test-driven Development
 
