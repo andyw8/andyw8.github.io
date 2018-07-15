@@ -62,7 +62,7 @@ message. This message can be suppressed by setting:
 Called from spec/hello_spec.rb:11:in `block (2 levels) in <top (required)>'.
 ```
 
-It's saying the actual error raised was `NoMethodError`, rather than `InvalidArgument`, and it's warning us there'a risk of a false positive (the
+It's saying the actual error raised was `NoMethodError`, rather than `ArgumentError`, and it's warning us there'a risk of a false positive (the
 test passes when even thought the implementation is wrong).
 The warning is useful, but on a large test suite which already outputs a lot of warnings, it might not be noticed.
 
