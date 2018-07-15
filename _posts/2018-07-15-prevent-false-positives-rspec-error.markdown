@@ -97,7 +97,7 @@ By setting it to `:raise`, your test will fail unless you specify the error type
 
 This will help to prevent future problems. If you have a large test suite, it might take some effort to update your test suite, but it's worth it.
 
-# Conclusion
+# Final Thoughts
 
 Pay attention to the warnings emitted from your code or test suite, and try to eliminate them.
 They exist to help you, not to annoy you.
