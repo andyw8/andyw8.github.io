@@ -9,6 +9,8 @@ My preferred way to work is to augment a team as a developer/coach, in order to 
 
 [Contact Me](contact) for my availability and rates.
 
+[Résumé (CV)](http://cv.andywaite.com/)
+
 Below are examples of some of the areas I can advise on:
 
 ### Test-driven Development

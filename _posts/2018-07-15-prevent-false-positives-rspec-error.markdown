@@ -5,7 +5,8 @@ date:   2018-07-15
 published: true
 ---
 
-Let's imagine we're writing a test to ensure an error is raised:
+Let's imagine we're writing a simple class to greet a user.
+Following a TDD approach, we'll write the test first:
 
 ```ruby
 # spec/hello_spec.rb
@@ -26,7 +27,7 @@ describe Hello do
 end
 ```
 
-The implementation is simple:
+The implementation is straightforward::
 
 ```ruby
 # lib/hello.rb
@@ -39,15 +40,15 @@ class Hello
 end
 ```
 
-We push the branch, see it passes in Travis or whatever CI is in use, then merge it into master.
+We push the branch, see it passes in Travis (or whatever CI is in use), then merge it into master.
 
 # We just introduced a bug
 
-Do you see it? We're calling `run` as a instance method, but it's actually a class method.
+Do you spot it? In the second test, We're calling `run` as a instance method, but it's actually a class method.
 
-An error _is_ being raised, but it's not the we were expecting.
+An error _is_ being raised, so the test passes, but it's not the error we were expecting.
 
-If we were using RSpec 3 or newer, you might have spotted a lengthy warning displayed as part of the test output:
+If we were using RSpec 3 or newer, you might have spotted a warning displayed as part of the test output:
 
 ```
 WARNING: Using the `raise_error` matcher without providing a specific error or
@@ -61,10 +62,11 @@ message. This message can be suppressed by setting:
 Called from spec/hello_spec.rb:11:in `block (2 levels) in <top (required)>'.
 ```
 
-But on a large test suite which already outputs a lot of warnings, it's easy to miss that.
+It's saying the actual error raised was `NoMethodError`, rather than `InvalidArgument`, and it's warning us there'a risk of a false positive (the
+test passes when even thought the implementation is wrong).
+The warning is useful, but on a large test suite which already outputs a lot of warnings, it might not be noticed.
 
-Let's read the error output carefully. It's saying the actual error raised was `NoMethodError`, rather than `InvalidArgument`.
-We can improve the test so it checks for the correct error type:
+We can improve the test so it checks for the specific error type:
 
 ```
   it "raises an error if no name is supplied" do
@@ -74,7 +76,7 @@ We can improve the test so it checks for the correct error type:
   end
 ```
 
-Re-running the test now results in a proper failure:
+Re-running the test now results in an actual failure:
 
 ```
 expected ArgumentError with "No name given", got #<NoMethodError: undefined method `run' for #<Hello:0x007f8868b8d0d8>> with backtrace:
