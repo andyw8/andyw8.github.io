@@ -10,9 +10,7 @@ Following a TDD approach, we'll write the test first:
 
 ```ruby
 # spec/hello_spec.rb
-require "spec_helper"
-
-describe Hello do
+RSpec.describe Hello do
   it "greets" do
     result = Hello.run("Andy")
 
