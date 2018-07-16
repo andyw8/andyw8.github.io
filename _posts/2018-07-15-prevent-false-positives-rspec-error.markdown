@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Preventing False Positives in RSpec"
+title:  "Preventing False Positives in RSpec When Testing Exceptions"
 date:   2018-07-15
 published: true
 ---
