@@ -42,7 +42,7 @@ We push the branch, see it passes in Travis (or whatever CI is in use), then mer
 
 # We just introduced a bug
 
-Do you spot it? In the second test, We're calling `run` as a instance method, but it's actually a class method.
+Do you spot it? In the second test, we're calling `run` as a instance method, but it's actually a class method.
 
 An error _is_ being raised, so the test passes, but it's not the error we were expecting.
 
