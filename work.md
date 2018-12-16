@@ -31,10 +31,11 @@ permalink: /work/
 
 ### Talks
 
+* Programers Don't Read Books (Financeit, Toronto, November 2018)
 * Vim Everywhere (Vim Meetup Group, London, May 2015)
-* [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) Hashrocket, Chicago, November 2013
+* [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) (Hashrocket, Chicago, November 2013)
 * An Introduction to CoffeeScript (NotOnTheHighStreet, London, April 2013)
-* [Contributing to Open Source using GitHub](http://www.slideshare.net/andyw8/contributing-to-open-source-via-github) BBC Future Media, London, June 2012
+* [Contributing to Open Source using GitHub](http://www.slideshare.net/andyw8/contributing-to-open-source-via-github) (BBC Future Media, London, June 2012)
 
 ### Open Source
 
