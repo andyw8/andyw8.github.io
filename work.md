@@ -56,7 +56,7 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 * [cheepr.com (on archive.org)] (Rails) (2007)
 * [NeoForums (on archive.org)] (ASP) (2000)
 
-[Financit]: https://www.financeit.ca
+[Financeit]: https://www.financeit.ca
 [Dynamic50]: https://github.com/dynamic50
 [We Are Friday]: http://wearefriday.com
 [CDP]: http://cdp.net
