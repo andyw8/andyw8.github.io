@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-You can email me at web(at)andywaite.com.
+You can email me at contact@andywaite.com
