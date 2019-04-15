@@ -66,7 +66,3 @@ Below are examples of some of the areas I can advise on:
 ## Experience
 
 Check my [Past Work](/work) to see the clients I've worked with.
-
-## Location
-
-I have recently relocated to Toronto as a Permanent Resident, but will consider travel or remote work.
