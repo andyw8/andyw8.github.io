@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+* [Résumé (CV)](http://cv.andywaite.com)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
 * [Twitter](https://www.twitter.com/andyw8)
 * [GitHub](https://github.com/andyw8)
