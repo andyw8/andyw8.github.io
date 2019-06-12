@@ -32,6 +32,7 @@ permalink: /work/
 
 ### Talks
 
+* [Improving Code Design With Automated Checks](https://www.slideshare.net/AndyWaite/improving-code-design-with-automated-checks) (Toronto Rails Meetup, Toronto, June 2019)
 * Programmers Don't Read Books (Financeit, Toronto, November 2018)
 * Vim Everywhere (Vim Meetup Group, London, May 2015)
 * [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) (Hashrocket, Chicago, November 2013)
