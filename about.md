@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a experienced software engineer with a aim to help development teams to evolve
+I'm a experienced software engineer whose aim to help development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and Toronto,
@@ -16,6 +16,7 @@ where I am now based.
 * [GitHub](https://github.com/andyw8)
 
 <img src="https://pbs.twimg.com/profile_images/769618567482503168/TWRr2Fst_400x400.jpg" width="200" height="200" />
+<br/>
 
 Below are some of my areas of expertise:
 
