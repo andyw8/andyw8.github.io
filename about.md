@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a experienced software engineer whose aim to help development teams evolve
+I'm a experienced software engineer whose helps development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and Toronto,
