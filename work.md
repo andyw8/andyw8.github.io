@@ -4,9 +4,10 @@ title: Work
 permalink: /work/
 ---
 
+I am currently an Engineering Manager at [Financeit], Toronto (since 2016)
+
 ### Past Work
 
-* [Financeit] (since 2016)
 * [CDP] (with [Made]) (Rails) (2016)
 * [The People's Operator] (Rails) (2015)
 * [HSBC Global Connections] (with [We Are Friday]) (Rails) (2015)

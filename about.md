@@ -8,7 +8,7 @@ I'm a experienced software engineer whose helps development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and Toronto,
-where I am now based.
+where I work at [Financeit].
 
 * [Résumé (CV)](http://cv.andywaite.com)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
@@ -72,3 +72,5 @@ Below are some of my areas of expertise:
 ## Experience
 
 Check my [Past Work](/work) to see the clients I've worked with.
+
+[Financeit]: https://financeit.io
