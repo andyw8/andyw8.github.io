@@ -5,8 +5,8 @@ date:   2019-09-15
 published: true
 ---
 
-At [Financeit], our main app uses RSpec for the test suite, but until recently it
-made use of [Mocha] (not to be confused with the JavaScript library of the
+At [Financeit], our main app uses RSpec for the test suite, but didn't use
+didn't use rspec-mocks. Instead, it used [Mocha] (not to be confused with the JavaScript library of the
 same name) for stubbing and mocking.
 
 We recently decided to switch to use rspec-mocks. Some reasons for this
@@ -17,14 +17,14 @@ were:
   screencasts, blog posts, etc).
 * New developers joining the team were typically already familiar with rspec-mocks.
 
-We didn't have any problem with Mocha itself – it's well-designed, has good
+We didn't have any major problems with Mocha itself – it's well-designed, has good
 documentation, and a responsive maintainer. The main reason was to have a
 simple and consistent stack.
 
 ## Approach
 
 As our test suite is large, we knew that an incremental approach would be
-preferable.
+needed.
 
 We made use of the [rspec-multi-mock] gem to allow Mocha and rspec-mocks to both
 be used at the same time.
