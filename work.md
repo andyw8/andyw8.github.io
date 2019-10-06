@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-I am currently an Engineering Manager at [Financeit], Toronto (since 2016)
+I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 
 ### Past Work
 
