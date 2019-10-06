@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Refactoring HTML
+title: "Dissertation: Refactoring HTML"
+tags: dissertation
 ---
 Martin Fowler's definition of refactoring is "a change made to the internal
 structure of software to make it easier to understand and cheaper to modify

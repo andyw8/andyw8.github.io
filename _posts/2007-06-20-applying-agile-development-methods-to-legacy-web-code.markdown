@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Applying Agile Development Methods to Legacy Web Code
+title: "Dissertation: Applying Agile Development Methods to Legacy Web Code"
+tags: dissertation
 ---
 My MSc dissertation proposal title is "Applying Agile Development Methods to Legacy Web Code".
 I hope to post regular updates here as I work on it.

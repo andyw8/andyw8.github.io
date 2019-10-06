@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Software and Tools
+title: "Dissertation: Software and Tools"
 ---
 Software that I've found useful so far:
 
@@ -11,4 +11,3 @@ Software that I've found useful so far:
 * Cygwin - UNIX shell for Windows
 * Simian - finds duplicate code in files
 * PHPMyAdmin
-* (Dreamweaver extension to ignore svn folders )

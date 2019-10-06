@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Some Possible Web Refactorings
+title: "Dissertation: Some Possible Web Refactorings"
+tags: dissertation
 ---
 Sticking with Martin Fowler's style, I've tried to use the naming convention of [verb] [subject].
 

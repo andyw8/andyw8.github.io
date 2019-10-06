@@ -1,6 +1,7 @@
 ---
-title: Refactoring HTML and CSS with help from wkpdf
+title: Dissertation: Refactoring HTML and CSS with help from wkpdf
 layout: post
+tags: dissertation
 ---
 I've been thinking about how wkpdf could be useful when refactoring code in order
 to avoid inadvertently changing the appearance of a page.

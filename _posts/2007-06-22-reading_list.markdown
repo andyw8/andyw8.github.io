@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Reading List For My Dissertation
+title: "Dissertation: Reading List"
+tags: dissertation
 ---
 Got:
 
