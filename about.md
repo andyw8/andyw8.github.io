@@ -7,8 +7,8 @@ permalink: /about/
 I'm a experienced software engineer whose helps development teams evolve
 and improve by adopting modern software engineering practices.
 
-I've been part of teams in London, Edinburgh, New York City, Berlin and Toronto,
-where I work at [Financeit].
+I've been part of teams in London, Edinburgh, New York City, Berlin and now Toronto,
+where I am an Engineering Lead at [Financeit].
 
 * [Résumé (CV)](http://cv.andywaite.com)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
