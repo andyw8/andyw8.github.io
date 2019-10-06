@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
+<img src="https://pbs.twimg.com/profile_images/769618567482503168/TWRr2Fst_400x400.jpg" width="200" height="200" />
+<br/>
+
 I'm a experienced software engineer whose helps development teams evolve
 and improve by adopting modern software engineering practices.
 
@@ -14,9 +17,6 @@ where I am an Engineering Lead at [Financeit].
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
 * [Twitter](https://www.twitter.com/andyw8)
 * [GitHub](https://github.com/andyw8)
-
-<img src="https://pbs.twimg.com/profile_images/769618567482503168/TWRr2Fst_400x400.jpg" width="200" height="200" />
-<br/>
 
 Below are some of my areas of expertise:
 
