@@ -8,6 +8,8 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 
 ### Past Work
 
+(My [Résumé (CV)] and [LinkedIn] profile has more details on some of these).
+
 * [CDP] (with [Made]) (Rails) (2016)
 * [The People's Operator] (Rails) (2015)
 * [HSBC Global Connections] (with [We Are Friday]) (Rails) (2015)
@@ -82,3 +84,5 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 [SIMUL8]: http://www.simul8.com
 [NeoForums (on archive.org)]: https://web.archive.org/web/20010428030011/http://www.neoforums.org/neoforums/
 [Made]: https://www.madetech.com
+[Résumé (CV)]: http://cv.andywaite.com
+[LinkedIn]: https://www.linkedin.com/in/andyw8/
