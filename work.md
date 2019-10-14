@@ -33,6 +33,13 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 * [techradar.io] (Rails) (2014)
 * [Continuous Quality] (Writing) (2014)
 
+### Open Source
+
+* [codeclimate-engine-rb](https://github.com/andyw8/codeclimate-engine-rb) (Ruby)
+* [techradar.io](https://github.com/andyw8/techradar) (Ruby, Rails)
+* [do_by](https://github.com/andyw8/do_by) (Ruby)
+* [capybara-page-object](https://github.com/andyw8/capybara-page-object) (Ruby)
+
 ### Talks
 
 * [Improving Code Design With Automated Checks](https://www.slideshare.net/AndyWaite/improving-code-design-with-automated-checks) (Toronto Rails Meetup, Toronto, June 2019)
@@ -41,13 +48,6 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 * [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) (Hashrocket, Chicago, November 2013)
 * An Introduction to CoffeeScript (NotOnTheHighStreet, London, April 2013)
 * [Contributing to Open Source using GitHub](http://www.slideshare.net/andyw8/contributing-to-open-source-via-github) (BBC Future Media, London, June 2012)
-
-### Open Source
-
-* [codeclimate-engine-rb](https://github.com/andyw8/codeclimate-engine-rb) (Ruby)
-* [techradar.io](https://github.com/andyw8/techradar) (Ruby, Rails)
-* [do_by](https://github.com/andyw8/do_by) (Ruby)
-* [capybara-page-object](https://github.com/andyw8/capybara-page-object) (Ruby)
 
 See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other OSS contributions.
 
