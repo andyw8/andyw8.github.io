@@ -7,10 +7,10 @@ permalink: /about/
 <img src="https://pbs.twimg.com/profile_images/769618567482503168/TWRr2Fst_400x400.jpg" width="200" height="200" />
 <br/>
 
-I'm a experienced software engineer whose helps development teams evolve
+I'm a experienced software engineer who helps development teams evolve
 and improve by adopting modern software engineering practices.
 
-I've been part of teams in London, Edinburgh, New York City, Berlin and now Toronto,
+I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto,
 where I am an Engineering Lead at [Financeit].
 
 * [Résumé (CV)](http://cv.andywaite.com)
