@@ -94,4 +94,4 @@ You could also use a custom RuboCop check.
 
 ## Final Steps
 
-Eventually, you'll have moved every test over to the new `rails_helper`. You can now delete `legacy_helper.rb`. You may also discover there gems in your Gemfile which are no longer needed, and can be dropped. You may also be able to remove unused files from `spec/support` if they are no longer referenced.
+Eventually, you'll have moved every test over to the new `rails_helper.rb`. You can now delete `legacy_helper.rb`. You may also discover there gems in your Gemfile which are no longer needed, and can be dropped. You may also be able to remove unused files from `spec/support` if they are no longer referenced.
