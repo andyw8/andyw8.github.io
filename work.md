@@ -8,7 +8,7 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 
 ### Past Work
 
-(My [Résumé (CV)] and [LinkedIn] profile has more details on some of these).
+From 2010 to 2016 I ran an independent software consultancy.
 
 * [CDP] (with [Made]) (Rails) (2016)
 * [The People's Operator] (Rails) (2015)
@@ -19,12 +19,6 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 * [BBC – London 2012 Olympics] (as Developer-in-Test) (2012)
 * [BBC – Weather] (as Developer-in-Test) (2011)
 * [Chromaroma] (with [Dynamic50]) (Rails) (2010)
-* [Top Targets] (Rails) (2009)
-* [SIMUL8] (Perl) (2007)
-* Strathclyde Telegraph student newspaper (volunteer) (PHP) (2006)
-* [Scottish Museums Council] (via [Company Net](http://www.company-net.com)) (ASP) (2002)
-* [Jim Beam Brands](http://www.beamsuntory.com) (via [Company Net](http://www.company-net.com)) (ASP) (2002)
-* [Edinburgh Interational Festival](http://www.eif.co.uk) (via [Company Net](http://www.company-net.com)) (ASP) (2001)
 
 ### Personal Projects
 
@@ -42,7 +36,7 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 
 ### Talks
 
-* [Improving Code Design With Automated Checks](https://www.slideshare.net/AndyWaite/improving-code-design-with-automated-checks) (Toronto Rails Meetup, Toronto, June 2019)
+* [Improving Code Design With Automated Checks](https://www.slideshare.net/AndyWaite/improving-code-design-with-automated-checks) (Rails Meetup, Toronto, June 2019)
 * Programmers Don't Read Books (Financeit, Toronto, November 2018)
 * Vim Everywhere (Vim Meetup Group, London, May 2015)
 * [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) (Hashrocket, Chicago, November 2013)
