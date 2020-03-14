@@ -43,7 +43,7 @@ We then update the existing references to that file with the new filename, which
 
 Run your tests suite to ensure everything is still passing.
 
-Next, we create a 'clean slate' `rails_helper`. An easy to do this is by re-running the rspec-rails generator, i.e. `rails generate rspec:install`.
+Next, we create a 'clean slate' `rails_helper.rb`. An easy to do this is by re-running the rspec-rails generator, i.e. `rails generate rspec:install`.
 
 Now, find a relatively basic test in your test suite. It's usually easier to start with focused unit tests rather than integration tests, since they typically have more dependencies.
 
@@ -51,18 +51,18 @@ Change the test to run with the new `rails_helper.rb`. If it passes, then great,
 
 Note that it's important to verify that the tests passes individually. If you run the whole suite, a previously run test may have already loaded a necessary dependency. Since RSpec runs the tests in a random order, this may result in a false positive.
 
-But what if the test fails? Hopefully the test output will indicate that the failure is due to a missing dependency.
+But what if the test fails? Often the test output will indicate that the failure is due to a missing dependency.
 
-There are a few courses of action you can take to resolve this.
+There are a few courses of action you can take to resolve this:
 
-- You can determine what lines in `legacy_rails_helper.rb` are needed, and copy to your `rails_helper.rb`.
+- You can determine what lines in `legacy_rails_helper.rb` are needed, and copy them to your `rails_helper.rb`.
 - You can use custom hooks so that particular lines are only executed for tests that are tagged with that hook name.
 - You can copy only what's required for that specific test.
 
 Let's talk about the pros and cons of each.
 
-If we always copy the code back into `rails_helper.rb` then we'll end up close back where we started.
-So I try to reserve that for dependencies which are used in a large number of tests, e.g. something like FactoryBot.
+If we always copy the code back into `rails_helper.rb` then we'll end up close to where we started.
+So we should reserve that for dependencies which are used in a large number of tests, e.g. something like FactoryBot.
 
 What about hooks? RSpec lets us run specific code for tests with a particular tag:
 
@@ -75,14 +75,16 @@ end
 ```
 
 This can be useful, but the downside is that we're adding a layer of indirection.
-A developer reading this would need to know what a particular tag represents.
+A developer reading the test would need to know what a particular tag represents.
 
-The last approach is to be explicit about of each test's dependencies, for example:
+The last approach is to be explicit about each test's dependencies, for example:
 
 ```ruby
 require "rails_helper"
 require "some-library"
 ```
+
+While this might result in a little more typing, it's an effective way to manage dependency loading.
 
 ## Communicating the Change
 

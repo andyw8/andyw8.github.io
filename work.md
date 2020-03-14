@@ -8,7 +8,8 @@ I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
 
 ### Past Work
 
-From 2010 to 2016 I ran an independent software consultancy.
+From 2010 to 2016 I ran an independent software consultancy in London, UK.
+Clients included:
 
 * [CDP] (with [Made]) (Rails) (2016)
 * [The People's Operator] (Rails) (2015)
