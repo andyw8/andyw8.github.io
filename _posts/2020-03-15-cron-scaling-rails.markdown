@@ -5,7 +5,7 @@ date:   2020-03-15
 published: true
 ---
 A common theme in business applications is the need for some kind of periodic task to run at a fixed interval, such as daily or weekly.
-This is often need for activities such as billing, pushing data to other systems, or integrating with a third-party API.
+This is often used for activities such as billing, pushing data to other systems, or integrating with a third-party API.
 
 The de facto tool to use for this is cron. It's somewhat archaic, but provides a reliable mechanism to declaratively define job schedules.
 The popular [whenever] gem provides an DSL to make this easy to use with Ruby.
@@ -26,7 +26,7 @@ To allow for some growth, we provision a server with 512MB of memory.
 If you schedule a cron job, the server's memory usage will temporarily spike to to 400MB.
 
 This might not even be noticed at first.
-Even if the machine runs short on memory, it can temporarily make use swap space on disk to temporarily.
+Even if the machine runs short on memory, it can temporarily make use swap space on disk.
 This might happen in the middle of night, when traffic is already low.
 
 But consider what happens once you have more scheduled jobs:
