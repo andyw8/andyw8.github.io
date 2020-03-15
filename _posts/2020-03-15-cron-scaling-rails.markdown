@@ -23,7 +23,7 @@ On a small app, this approach may be fine, but when scaling up there are some se
 Whenever we use `rails runner`, we're launching a completely separate instance of the application.
 Let's say your Rails app typically uses around 200MB of memory.
 To allow for some growth, we provision a server with 512MB of memory.
-If you schedule a cron job, the server's memory usage will temporarily spike to to 400MB.
+If you schedule a cron job, the server's memory usage will temporarily spike to around 400MB.
 
 This might not even be noticed at first.
 Even if the machine runs short on memory, it can temporarily make use of swap space on disk.
