@@ -4,45 +4,48 @@ title:  "Avoiding cron pitfalls when scaling Rails"
 date:   2020-03-15
 published: true
 ---
-It's a common element in business applications to rely on some kind of periodic task at a fixed interval.
-This may be for activities such as billing, pushing data to other system, or importing data from a third party.
+A common theme in business applications is the need for some kind of periodic task to run at a fixed interval, such as daily or weekly.
+This is often for be for activities such as billing, pushing data to other systems, or integrating with an third-party API.
 
-The common tool to use this is cron. It's somewhat primitive, but provides a mechanism to declaratively define jobs.
-The popular [whenever] gem provides an easy DSL to make this even easier.
+The de facto tool to use for this is cron. It's somewhat archaic, but provides a reliable mechanism to declaratively define job schedules.
+The popular [whenever] gem provides an DSL to make this easy to use with Ruby.
+
+[whenever]: https://github.com/javan/whenever
 
 Simple tasks such as clearing a cache are a great match for cron.
 They run quickly and don't require significant system resources.
 
 The difficulty comes when cron is used to execute tasks which rely on the Rails application.
-It's tempting to make use of cron for this, because we easily use the  "rails runner" command to invoke a method on a class.
+It's easy to make use of cron for this, because we call the `rails runner` command to invoke a method on a class.
 
-On a small app, this approach may be fine.
-But it's fundamentally flawed.
-Let's explore why.
+On a small app, this approach may be fine, but when scaling there are some serious drawbacks.
 
-Whenever we use "rails runner", we're launching a completely separate instance of the application.
-
-Let's say your Rails app typically uses 200MB of memory. To allow for some
-growth, you provision a server with 512MB of memory.
+Whenever we use `rails runner`, we're launching a completely separate instance of the application.
+Let's say your Rails app typically uses around 200MB of memory.
+To allow for some growth, we provision a server with 512MB of memory.
 
 If you schedule a cron job, the server's memory usage will temporarily spike to to 400MB.
 
-This might not even be noticed. Even if the machine runs short on memory, it can
-temporarily make use swap space on disk to temporarily  This might happen in the
-middle of night, when traffic is already low.
+This might not even be noticed at first.
+Even if the machine runs short on memory, it can temporarily make use swap space on disk to temporarily.
+This might happen in the middle of night, when traffic is already low.
 
-But consider what happens once you have more schedule jobs:
+But consider what happens once you have more scheduled jobs:
 
-- CalculateUsage runs daily at 2am
-- GenerateReports runs weekly at 2am (every Monday)
-- CreateInvoices runs monthly at 2am (1st of each month)
+- `CalculateUsage` runs daily at 2am
+- `GenerateReports` runs weekly at 2am (every Monday)
+- `CreateInvoices` runs monthly at 2am (1st of each month)
 
 This means that once a month, all three jobs will be triggered at the same time.
-Your system needs to have enough capacity to run all three, in addition to the main app.
+Your system needs to have enough capacity to run three instances, in addition to the main app.
 
 This could mean you need to over-provision your servers by 4x. That extra capacity
 will be idle most of the time. On a large site, you could be spending thousands
 of extra dollars per month. Or if you don't sufficiently provision, then you risk crashing your site.
+
+This risk is often exacerbated by the nature of schedule jobs.
+A web request typically lasts only for a few seconds at most.
+But a job may run for a much longer period, causing a large spike in memory use.
 
 ## A First Approach
 
@@ -65,6 +68,7 @@ As with many scaling problems, we can handle growth better if we can scale horiz
 
 We can achieve this with a distributed queue.
 In Rails, we typically use tools such as Sidekiq, Resque or Delayed Job.
+
 We could even configure this to auto-scale to handle varying workloads.
 
 Instead of using cron to execute the jobs, we'll use it to only enqueue them.
@@ -78,9 +82,9 @@ This still involves booting up a separate Rails instance, but it's a fast operat
 Spacing jobs one minute apart should be sufficient.
 
 You may later run into another problem of timeouts from jobs being too large.
-That can be handle with by map-reduce approach, but that's beyond the scope of this post.
+That can often be handled with a map-reduce approach, but that's beyond the scope of this post.
 
-## Further Improvements
+## Further Improvement
 
 Instead of having to boot up an instance of the app to enqueue a job, there's another approach we can take.
 
