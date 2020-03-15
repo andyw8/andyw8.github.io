@@ -69,6 +69,7 @@ We can achieve this with a distributed queue.
 In Rails, we typically use tools such as Sidekiq, Resque or Delayed Job.
 
 We could even configure this to auto-scale to handle varying workloads.
+We'll also benefit from built-in support for retries, although this does require some care to write jobs which are idempotent.
 
 Instead of using cron to execute the jobs, we'll use it to only enqueue them, e.g.:
 
