@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Avoiding cron pitfalls when scaling Rails"
+title:  "Avoiding common cron pitfalls when scaling Rails"
 date:   2020-03-15
 published: true
 ---
 A common theme in business applications is the need for some kind of periodic task to run at a fixed interval, such as daily or weekly.
-This is often for be for activities such as billing, pushing data to other systems, or integrating with an third-party API.
+This is often need for activities such as billing, pushing data to other systems, or integrating with a third-party API.
 
 The de facto tool to use for this is cron. It's somewhat archaic, but provides a reliable mechanism to declaratively define job schedules.
 The popular [whenever] gem provides an DSL to make this easy to use with Ruby.
@@ -18,12 +18,11 @@ They run quickly and don't require significant system resources.
 The difficulty comes when cron is used to execute tasks which rely on the Rails application.
 It's easy to make use of cron for this, because we call the `rails runner` command to invoke a method on a class.
 
-On a small app, this approach may be fine, but when scaling there are some serious drawbacks.
+On a small app, this approach may be fine, but when scaling up there are some serious drawbacks.
 
 Whenever we use `rails runner`, we're launching a completely separate instance of the application.
 Let's say your Rails app typically uses around 200MB of memory.
 To allow for some growth, we provision a server with 512MB of memory.
-
 If you schedule a cron job, the server's memory usage will temporarily spike to to 400MB.
 
 This might not even be noticed at first.
@@ -71,7 +70,7 @@ In Rails, we typically use tools such as Sidekiq, Resque or Delayed Job.
 
 We could even configure this to auto-scale to handle varying workloads.
 
-Instead of using cron to execute the jobs, we'll use it to only enqueue them.
+Instead of using cron to execute the jobs, we'll use it to only enqueue them, e.g.:
 
 ```ruby
 job = MonthlyReport.new(Date.today)
@@ -86,11 +85,11 @@ That can often be handled with a map-reduce approach, but that's beyond the scop
 
 ## Further Improvement
 
-Instead of having to boot up an instance of the app to enqueue a job, there's another approach we can take.
+Instead of having to boot up an instance of the app just to enqueue a job, there's another approach we can take.
 
-We can add an internal API endpoint, such as `/api/internal/jobs`. We can make an HTTP post, specifying the job to be queued.
-That means cron only need to execute a call to something like curl, which uses vastly less resources.
-Obviously you should add some kind of authentication or restriction on that end point avoid any possibility of a DOS attack.
+We can add an internal API endpoint, such as `/api/internal/jobs`. We can make an HTTP post, specifying the job to be enqueued.
+That means cron only needs to execute a call to something like curl, which uses vastly less resources.
+Obviously you should add some kind of authentication or restriction on the endpoint to avoid any possibility of a DOS attack.
 
 [//]: # "Error handling"
 [//]: # "Heroku Scheduler"
