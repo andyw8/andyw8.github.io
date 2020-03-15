@@ -26,7 +26,7 @@ To allow for some growth, we provision a server with 512MB of memory.
 If you schedule a cron job, the server's memory usage will temporarily spike to to 400MB.
 
 This might not even be noticed at first.
-Even if the machine runs short on memory, it can temporarily make use swap space on disk.
+Even if the machine runs short on memory, it can temporarily make use of swap space on disk.
 This might happen in the middle of night, when traffic is already low.
 
 But consider what happens once you have more scheduled jobs:
