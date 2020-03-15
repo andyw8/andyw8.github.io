@@ -16,7 +16,7 @@ Simple tasks such as clearing a cache are a great match for cron.
 They run quickly and don't require significant system resources.
 
 The difficulty comes when cron is used to execute tasks which rely on the Rails application.
-It's easy to make use of cron for this, because we call the `rails runner` command to invoke a method on a class.
+It's easy to make use of cron for this, because we can call the `rails runner` command to invoke a method on a class.
 
 On a small app, this approach may be fine, but when scaling up there are some serious drawbacks.
 
@@ -33,7 +33,7 @@ But consider what happens once you have more scheduled jobs:
 
 - `CalculateUsage` runs daily at 2am
 - `GenerateReports` runs weekly at 2am (every Monday)
-- `CreateInvoices` runs monthly at 2am (1st of each month)
+- `CreateInvoices` runs monthly at 2am (first Monday of each month)
 
 This means that once a month, all three jobs will be triggered at the same time.
 Your system needs to have enough capacity to run three instances, in addition to the main app.
