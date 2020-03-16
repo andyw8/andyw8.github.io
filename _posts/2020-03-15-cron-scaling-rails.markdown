@@ -42,7 +42,7 @@ This could mean you need to over-provision your servers by 4x. That extra capaci
 will be idle most of the time. On a large site, you could be spending thousands
 of extra dollars per month. Or if you don't sufficiently provision, then you risk crashing your site.
 
-This risk is often exacerbated by the nature of schedule jobs.
+This risk is often exacerbated by the nature of scheduled jobs.
 A web request typically lasts only for a few seconds at most.
 But a job may run for a much longer period, causing a large spike in memory use.
 
