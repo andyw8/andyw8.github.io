@@ -4,7 +4,7 @@ title:  "Defining your team's policy for broken builds"
 date:   2020-03-16
 published: true
 ---
-To delivery working software incrementally, and at a sustainable pace, it's critical to keep the master build passing.
+To deliver working software incrementally, and at a sustainable pace, it's critical to keep the master build passing at all times.
 
 A failing build is demoralizing and disruptive for the team.
 Developers and testers will lose confidence in the correctness of the system.
