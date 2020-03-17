@@ -15,7 +15,7 @@ The whole team should feel responsible for it, and when the build fails, the who
 It shouldn't be left to a 'devops' team, or only to senior developers.
 One option is to configure your CI to post notifications to your team's Slack channel for high visibility.
 
-We can do adopt several practices to help ensure master stays passing:
+We can adopt several practices to help ensure master stays passing:
 
 - Performing code reviews to detect potentially problematic tests
 - Running linters to catch common problem areas
