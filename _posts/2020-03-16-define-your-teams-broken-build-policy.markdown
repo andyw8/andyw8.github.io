@@ -56,7 +56,7 @@ The next step is more nuanced. It may need discussion with the team, and could d
 - Should you temporarily disable the test?
 - Should you delete a flawed test?
 
-Have a clear written policy for this useful, for example in your wiki or README.
+Have a clear written policy for this is useful, for example in your wiki or README.
 
 If the fix is going to take some time to resolve, you should aim to give updates at least every hour or so.
 
