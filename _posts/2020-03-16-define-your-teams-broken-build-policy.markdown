@@ -38,7 +38,7 @@ In most cases, the most recent merge will be the one that broke the build.
 If the author of the most recent merge hasn't reacted to the failure, send a gentle nudge.
 
 The first thing the author should do is pull the latest master, and check if the test passes locally.
-If it doesn't, that gives a good starting point. If it doesn't, we'll have to broaden the investigation.
+If it fails, that gives a good starting point. If it passes, we'll have to broaden the investigation.
 
 While this in progress, there are two key things to keep in mind:
 
