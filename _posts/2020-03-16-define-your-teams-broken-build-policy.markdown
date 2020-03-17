@@ -7,7 +7,7 @@ published: true
 To delivery working software at a sustainable pace, it's critical to keep the master build passing.
 
 A failing build is demoralizing and disruptive for the team.
-Developers will lose confidence in the correctness of the system.
+Developers and testers will lose confidence in the correctness of the system.
 They may be unable to know if a failing test was due to their change, or to something else.
 
 Keeping the master build passing should take priority over almost everything else.
