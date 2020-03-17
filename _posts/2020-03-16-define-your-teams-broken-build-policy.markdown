@@ -18,10 +18,11 @@ One option is to configure your CI to post notifications to your team's Slack ch
 We can adopt several practices to help ensure master stays passing:
 
 - Performing code reviews to detect potentially problematic tests
-- Running linters to catch common problem areas
+- Running linters to catch common problem areas, such as rubocop-rspec
 - Using features such as [GitHub Checks] to enforce a passing build before the branch can be merged into master.
 
 [GitHub Checks]: https://developer.github.com/v3/checks/
+[rubocop-rspec]: https://github.com/rubocop-hq/rubocop-rspec
 
 But even with these practices, things can still go wrong:
 
