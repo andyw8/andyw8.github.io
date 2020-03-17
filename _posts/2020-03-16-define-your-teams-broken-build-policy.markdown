@@ -8,26 +8,25 @@ To delivery working software at a sustainable pace, it's critical to keep the ma
 
 A failing build is demoralizing and disruptive for the team.
 Developers will lose confidence in the correctness of the system.
-They may not unable to know if a failing test was due to their change, or to something else's.
+They may be unable to know if a failing test was due to their change, or to something else.
 
 Keeping the master build passing should take priority over almost everything else.
-The whole team should feel responsible for it.
-When the build fails, the whole team should be alerted.
-For example, you can configure your CI to post notifications to your team's Slack channel for high visibility.
-
+The whole team should feel responsible for it, and when the build fails, the whole team should be alerted.
 It shouldn't be left to a 'devops' team, or only to senior developers.
+One option is to configure your CI to post notifications to your team's Slack channel for high visibility.
 
-We can do several things to help ensure master stays passing:
+We can do adopt several practices to help ensure master stays passing:
+
 - Perform code reviews to potentially unstable tests
 - Running linters to catch potential problem areas
-- Using features such as GitHub Checks to enforce a passing build before the branch can be merged into master.
+- Using features such as [GitHub Checks] to enforce a passing build before the branch can be merged into master.
 
 [GitHub Checks]: https://developer.github.com/v3/checks/
 
 But even with these practices, things can still go wrong:
 
 - We can have intermittent failures due to factors such as system time or concurrency.
-- We can have a [semantic conflict, where behaviour is correct on individual branches but incorrect when they're combined.
+- We can have a [semantic conflict], where behaviour is correct on individual branches but incorrect when they're combined.
 - We can have infrastructure failures unrelated to the code.
 
 [semantic conflict]: https://www.martinfowler.com/bliki/SemanticConflict.html
