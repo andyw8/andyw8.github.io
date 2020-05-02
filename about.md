@@ -11,7 +11,7 @@ I'm a experienced software engineer who helps development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto,
-where I am an Engineering Lead at [Financeit].
+where I work in the Developer Tools and Education team at [Shopify].
 
 * [Résumé (CV)](http://cv.andywaite.com)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
@@ -74,3 +74,4 @@ Below are some of my areas of expertise:
 Check my [Past Work](/work) to see the clients I've worked with.
 
 [Financeit]: https://financeit.io
+[Shopify]: https://shopify.com

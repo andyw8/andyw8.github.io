@@ -4,9 +4,11 @@ title: Work
 permalink: /work/
 ---
 
-I am currently an Engineering Lead at [Financeit], Toronto (since 2016)
+I work in the Development Tools and Education team at [Shopify], Toronto (since 2020)
 
 ### Past Work
+
+* Engineering Lead at [Financeit], Toronto (2016 – 2020)
 
 From 2010 to 2016 I ran an independent software consultancy in London, UK.
 Clients included:
@@ -55,7 +57,8 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 * [cheepr.com (on archive.org)] (Rails) (2007)
 * [NeoForums (on archive.org)] (ASP) (2000)
 
-[Financeit]: https://www.financeit.ca
+[Financeit]: https://www.financeit.io
+[Shopify]: https://www.shopify.com
 [Dynamic50]: https://github.com/dynamic50
 [We Are Friday]: http://wearefriday.com
 [CDP]: http://cdp.net
