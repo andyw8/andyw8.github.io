@@ -6,7 +6,7 @@ published: true
 ---
 
 At [Financeit], our main app uses RSpec for the test suite, but didn't use
-didn't use rspec-mocks. Instead, it used [Mocha] (not to be confused with the JavaScript library of the
+rspec-mocks. Instead, it used [Mocha] (not to be confused with the JavaScript library of the
 same name) for stubbing and mocking.
 
 We recently decided to switch to use rspec-mocks. Some reasons for this
