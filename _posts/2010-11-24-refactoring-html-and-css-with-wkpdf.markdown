@@ -1,5 +1,5 @@
 ---
-title: Dissertation: Refactoring HTML and CSS with help from wkpdf
+title: "Dissertation: Refactoring HTML and CSS with help from wkpdf"
 layout: post
 tags: dissertation
 ---
