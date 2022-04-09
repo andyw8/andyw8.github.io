@@ -9,7 +9,7 @@ Recently I've been aiming to do more [katas](http://codekata.com/), both in my p
 
 I noticed that whenever I was starting on a new kata, I was doing the same basic setup repeatedly before being able to write a first test. I also felt I was missing some of the configuration that my other 'real' projects benefited from.
 
-This led me to create [ruby-kata-template](https://github.com/andyw8/ruby-kata-template). Clicking on **Use this template** will give you a new blank project in seconds.
+This led me to create [ruby-kata-template](https://github.com/andyw8/ruby-kata-template). By clicking on **Use this template**, I get a new blank project in seconds, configured to my preferences.
 
 ## Feature Overview
 
