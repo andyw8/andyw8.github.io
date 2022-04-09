@@ -37,10 +37,18 @@ It's common on Ruby apps to have `rake` or `rake test`, so we provide that. It h
 
 [Standard](https://github.com/testdouble/standard) is an opinionated RuboCop configuration. 
 
-For me, the real value of Standard (or RuboCop) is only apparent when you have two things configured.
+For me, the real value of Standard (or RuboCop) is only apparent when you have two things configured in your editor:
 * Immediate feedback (your editor highlights problems as you code)
 * Auto-formatting (you can fix issues with one single shortcut, or automatically when the file is saved).
 
+There are various ways to set up this, but the template uses `rubocop-lsp`.
+
+### rubocop-lsp
+
+[rubocop-lsp](https://rubygems.org/gems/rubocop-lsp) is a gem which implements the [Language Server Protocol](https://en.wikipedia.org/wiki/Language_Server_Protocol). It allows for a close integration of your editor with RuboCop, providing a much more responsive experience. It avoids the overhead of starting RuboCop each time, meaning linting or auto-correction is nearly instant. 
+
+To use it, you'll also need an plugin/extension for your editor. The template is set up to recommend the VS Code [Shopify.rubocop-lsp](https://marketplace.visualstudio.com/items?itemName=Shopify.rubocop-lsp) extension.
+
 ### And more
 
-Take a look at the [README](https://github.com/andyw8/ruby-kata-template#readme) to learn more about what's included.
+Take a look at the [README](https://github.com/andyw8/ruby-kata-template#readme) to learn what else is included.
