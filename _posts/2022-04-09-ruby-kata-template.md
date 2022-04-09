@@ -13,10 +13,6 @@ This led me to create [ruby-kata-template](https://github.com/andyw8/ruby-kata-t
 
 ## Feature Overview
 
-### Minitest
-
-Although Minitest is already provided as a Bundled gem with Ruby, it is included in the `Gemfile` to ensure we're on the latest version. (I've RSpec extensively in the past, but my current preference is Minitest).
-
 ### Starting Points
 
 I've provided an empty Project (`project.rb`) and a corresponding test (`project_test.rb`). I expect the first step in most katas will be to rename these.
@@ -24,6 +20,26 @@ I've provided an empty Project (`project.rb`) and a corresponding test (`project
 ### Directory Structure
 
 I've followed the standard Ruby convention of the implementation being in `lib/` and the tests in `test/`
+
+### Minitest
+
+Although Minitest is already provided as a Bundled gem with Ruby, it is included in the `Gemfile` to ensure we're on the latest version. (I've RSpec extensively in the past, but my current preference is Minitest).
+
+### ActiveSupport::TestCase
+
+`ActiveSupport::TestCase` is part of Rails but here we are using it independently. It allows you to write 'declarative' tests, e.g. `test "it works" do...` rather than `def test_it_works`, which I feel is more readable.
+
+### Rake Task
+
+It's common on Ruby apps to have `rake` or `rake test`, so we provide that. It has support for [both MiniTest naming conventions](https://minitest.rubystyle.guide/#file-naming) (`test_*.rb` and `*_test.rb`)
+
+### Standard
+
+[Standard](https://github.com/testdouble/standard) is an opinionated RuboCop configuration. 
+
+For me, the real value of Standard (or RuboCop) is only apparent when you have two things configured.
+* Immediate feedback (your editor highlights problems as you code)
+* Auto-formatting (you can fix issues with one single shortcut, or automatically when the file is saved).
 
 ### And more
 
