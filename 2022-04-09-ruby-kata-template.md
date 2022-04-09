@@ -11,20 +11,20 @@ I noticed that whenever I was starting on a new kata, I was doing the same basic
 
 This led me to create [ruby-kata-template](https://github.com/andyw8/ruby-kata-template). Clicking on **Use this template** will give new a new blank project in seconds.
 
-# Feature Overview
+## Feature Overview
 
-## Minitest
+### Minitest
 
 Although Minitest is already provided as a Bundled gem with Ruby, it is included in the `Gemfile` to ensure we're on the latest version. (I've RSpec extensively in the past, but my current preference is Minitest).
 
-## Starting Points
+### Starting Points
 
 I've provided an empty Project (`project.rb`) and a corresponding test (`project_test.rb`). I expect the first step in most katas will be to rename these.
 
-## Directory Structure
+### Directory Structure
 
 I've followed the standard Ruby convention of the implementation being in `lib/` and the tests in `test/`
 
-## And more
+### And more
 
 Take a look at the [README](https://github.com/andyw8/ruby-kata-template#readme) to learn more about what's included.
