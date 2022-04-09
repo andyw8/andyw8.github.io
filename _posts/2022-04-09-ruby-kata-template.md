@@ -45,7 +45,7 @@ There are various ways to set up this, but the template uses `rubocop-lsp`.
 
 ### rubocop-lsp
 
-[rubocop-lsp](https://rubygems.org/gems/rubocop-lsp) is a gem which implements the [Language Server Protocol](https://en.wikipedia.org/wiki/Language_Server_Protocol). It allows for a close integration of your editor with RuboCop, providing a much more responsive experience. It avoids the overhead of starting RuboCop each time, meaning linting or auto-correction is nearly instant. 
+[rubocop-lsp](https://rubygems.org/gems/rubocop-lsp) is a gem which implements the [Language Server Protocol](https://en.wikipedia.org/wiki/Language_Server_Protocol). It allows for a close integration between your editor with RuboCop. It avoids the overhead of starting RuboCop, meaning linting or auto-correction is near-instant. 
 
 To use it, you'll also need an plugin/extension for your editor. The template is set up to recommend the VS Code [Shopify.rubocop-lsp](https://marketplace.visualstudio.com/items?itemName=Shopify.rubocop-lsp) extension.
 
