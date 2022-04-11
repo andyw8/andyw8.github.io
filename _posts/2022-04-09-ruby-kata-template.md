@@ -11,6 +11,8 @@ I noticed that whenever I was starting on a new kata, I was doing the same basic
 
 This led me to create [ruby-kata-template](https://github.com/andyw8/ruby-kata-template). By clicking on **Use this template**, I get a new blank project in seconds, configured to my preferences.
 
+I don't expect my preferences to match everyone else's, so I encourage you to fork it and customize to your own ideal template.
+
 ## Features
 
 ### Starting Point
@@ -51,15 +53,13 @@ To use it, you'll also need an plugin or extension for your editor. The template
 
 ## Solargraph
 
-Solargraph adds IDE-like features to an editor. It adds helpful features such as a content-aware autocompletion, and documentation for the Ruby language.
+Solargraph adds IDE-like experience for your editor. It provides helpful features such as a content-aware autocompletion, and documentation for the Ruby language.
+
+However, I often run into problems with it, so I was on the fence about including it.
 
 It's not as powerful as [Sorbet](https://sorbet.org/), so it's unable to infer types unless they are a Ruby primitive (String, Array, etc.)
 
 ![Solargraph example](images/solargraph-example.png)
-
-(add image for 'split')
-
-However, I often run into problems with it, so I was on the fence about including it.
 
 ### And more
 
