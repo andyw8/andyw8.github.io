@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-I work in the Development Tools and Education team at [Shopify], Toronto (since 2020)
+I currently work in the Ruby Developer Experience team at [Shopify], Toronto.
 
 ### Past Work
 
