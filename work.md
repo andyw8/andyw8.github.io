@@ -54,8 +54,6 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 * [TfL Unified REST API] (Ruby, Sinatra) (2012)
 * Wallpapers320 (iPhone App - Objective-C, backend - Rails) (2010)
 * [London Journey Planner] (iPhone App - Objective-C, backend - Rails) (2009)
-* [cheepr.com (on archive.org)] (Rails) (2007)
-* [NeoForums (on archive.org)] (ASP) (2000)
 
 [Financeit]: https://www.financeit.io
 [Shopify]: https://www.shopify.com
@@ -74,13 +72,11 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 [BBC – Weather]: http://www.bbc.co.uk/weather/
 [NotOnTheHighStreet.com]: https://www.notonthehighstreet.com/
 [Chromaroma]: https://www.chromaroma.com/
-[cheepr.com (on archive.org)]: https://web.archive.org/web/20071124083541/http://www.cheepr.com/
 [London Journey Planner]: https://iphonelondonjourneyplanner.wordpress.com
 [TfL Unified REST API]: http://tfl-api.herokuapp.com
 [Scottish Museums Council]: https://web.archive.org/web/20021124210410/http://www.scottishmuseums.org.uk/
 [Top Targets]: https://www.tes.co.uk/article.aspx?storycode=2382886
 [SIMUL8]: http://www.simul8.com
-[NeoForums (on archive.org)]: https://web.archive.org/web/20010428030011/http://www.neoforums.org/neoforums/
 [Made]: https://www.madetech.com
 [Résumé (CV)]: http://cv.andywaite.com
 [LinkedIn]: https://www.linkedin.com/in/andyw8/
