@@ -34,6 +34,8 @@ jobs:
 
 (I also had to disable parallel testing by commenting-out the `parallelize` line in `test_helper.rb`, as I found it was causing the tests to hang. I haven't had a chance yet to look into the cause.)
 
+## Basic Setup
+
 Overall, the setup for Jumpstart Pro is not so different than for any other Rails app, but the optional dependencies complicate things a little: If there is code that references a gem that isn’t installed, then typechecking will fail. To simplify things for this guide, we can open the Jumpstart configuration and enable the following features:
 
 * Payment Processor: Stripe
@@ -136,7 +138,11 @@ Finally, we need to disable the ConstantsFromStrings check for one file, due to 
 
 With that done, we can now run `bundle exec standardrb --fix` which will add a `typed: false` entry to each file.
 
-On its own that doesn't do anything, but it prepares the way that we can use Spoom's bump:
+On its own that doesn't do anything, but it prepares the way that we can use Spoom.
+
+## Spoom
+
+Spoom consists of various tools, one of which is the `bump` command:
 
 ```sh
 bundle exec spoom bump
@@ -144,6 +150,8 @@ bundle exec spoom bump
 This helps us discover which files can be 'bumped' up a level of typing.
 
 You should see that a large number are now marked as `# typed: true``, without us having to do any work.
+
+## Next Steps
 
 At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that we need to enable typing for.  Resolving those is outside the scope of this article, but you now have a strong starting point.
 
