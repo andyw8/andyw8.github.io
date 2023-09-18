@@ -12,7 +12,7 @@ For this post, I'll assume you are starting from a freshly generated Jumpstart a
 
 I'll demonstrate the process in incremental steps, so your app can continue to be deployed while type information is still being added. This follows Sorbet's philosophy of [Gradual Typing](https://sorbet.org/docs/gradual).
 
-## Preperation
+## Preparation
 
 Start by creating a `sorbet` branch for the Sorbet migration. This will be fairly short-lived, and only needed for the initial setup.
 
@@ -47,7 +47,7 @@ This should result in additions to `Gemfile.lock` which you should commit.
 
 Next, we'll add the `sorbet-static-and-runtime` and `tapoica` gems to the `Gemfile`, run `bundle` then `bundle exec tapioca init`.
 
-The `init` command can take a long time to run (10 minutes or more), and it may seem like has frozen. Have patience!
+The `init` command can take a long time to run (10 minutes or more), and it may seem like it has frozen. Have patience!
 
 You may be alarmed by the huge number of RBI files this creates, but you will very rarely need to open them.
 
@@ -55,7 +55,7 @@ After this is complete, we can commit everything.
 
 We can now run the typechecking:
 
-`$ bundle exec sorbet tc`
+`$ bundle exec srb tc`
 
 We should see about 20 errors. It's common to encounter errors when setting up Sorbet initially, often due to known limitations in Sorbet or Tapioca.
 
@@ -69,7 +69,7 @@ require "administrate/base_dashboard"
 
 and then re-run `bundle exec tapioca gem administrate`.
 
-After this there should be only one remaining error, which due to the Sorbet limitation that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
+After this there should be only one remaining error, which is due to the Sorbet limitation that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
 
 At this point you can push to CI and everything should be green again. If you wish, you can merge the `sorbet` branch into `main` and continue the remaining work in other branches.
 
@@ -149,10 +149,10 @@ bundle exec spoom bump
 ```
 This helps us discover which files can be 'bumped' up a level of typing.
 
-You should see that a large number are now marked as `# typed: true``, without us having to do any work.
+You should see that a large number are now marked as `# typed: true`, without us having to do any work.
 
 ## Next Steps
 
 At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that we need to enable typing for.  Resolving those is outside the scope of this article, but you now have a strong starting point.
 
-You’ll notice that we haven’t written any signatures yet. But even without that, we will benefit from Sorbet’s checks for such as calls to non-existing methods, or unreachable code.
+You’ll notice that we haven’t written any signatures yet. But even without that, we will benefit from Sorbet’s checks for things such as calls to non-existing methods, or unreachable code.
