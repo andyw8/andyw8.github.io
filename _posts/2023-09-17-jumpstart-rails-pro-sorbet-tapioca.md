@@ -8,7 +8,7 @@ This post describes the process of setting up Sorbet and Tapioca for the [Jumpst
 
 Since Jumpstart Pro is a commercial product, I can’t share the full code, but if you’re a Jumpstart customer you can view the changes in [this branch](https://github.com/andyw8/jumpstart-pro-rails/tree/andyw8/sorbet) of my fork. I recommend viewing it as individual commits.
 
-or this post, I'll assume you are starting from a freshly generated Jumpstart app. If you have already built your app on top of Jumpstart then it may take some more effort but the overall approach is the same).
+For this post, I'll assume you are starting from a freshly generated Jumpstart app. If you have already built your app on top of Jumpstart then it may take some more effort but the overall approach is the same.
 
 I'll demonstrate the process in incremental steps, so your app can continue to be deployed to production while type information is still being added. This follows Sorbet's philosophy of [Gradual Typing](https://sorbet.org/docs/gradual).
 
@@ -34,7 +34,7 @@ jobs:
 
 (I also had to disable parallel testing by commenting-out the `parallelize` line in `test_helper.rb`, as I found it was causing the tests to hang. I haven't had a chance yet to look into the cause.)
 
-Overall, the setup for Jumpstart Pro is not so different than for any other Rails app, but the optional dependencies complicate things a little: If there is code that references a gem that isn’t installed, then typechecking will fail. To simplify things for this guide, we can start Jumpstart configuration and enable the following features:
+Overall, the setup for Jumpstart Pro is not so different than for any other Rails app, but the optional dependencies complicate things a little: If there is code that references a gem that isn’t installed, then typechecking will fail. To simplify things for this guide, we can open the Jumpstart configuration and enable the following features:
 
 * Payment Processor: Stripe
 * Background Queue: Sidekiq
@@ -67,7 +67,7 @@ require "administrate/base_dashboard"
 
 and then re-run `bundle exec tapioca gem administrate`.
 
-After this there should be only remaining error, due to limitations that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
+After this there should be only remaining error, due to the Sorbet limitation that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
 
 At this point you can push to CI and everything should be green again. If you wish, you can merge the `sorbet` branch into `main` and continue the remaining work in other branches.
 
@@ -88,7 +88,7 @@ class Devise::SessionsController; end
 class Noticed::NotificationChannel; end
 ```
 
-For `Minitest::Mock` and `Sidekiq::Web` we again to add entry to `require.rb`:
+For `Minitest::Mock` and `Sidekiq::Web` we again to add entries to `require.rb`:
 
 ```ruby
 require "minitest/mock"
@@ -101,7 +101,7 @@ At this point, there should be no more entries in `todo.rb` and running `tapioca
 
 Although this project uses Standard rather than RuboCop, there are some useful cops in `rubocop-sorbet`, so we will add as a dependency.
 
-Then in `.standard.yml`, we’ll use Standard’s extend_config feature to reference a RuboCop Sorbet configuration file:
+Then in `.standard.yml`, we’ll use Standard’s [extend_config](https://blog.testdouble.com/posts/2023-01-19-super-standard-adding-gem-extensions-and-custom-rules/) feature to reference a RuboCop Sorbet configuration file:
 
 ```yml
 # .standard.yml
@@ -126,9 +126,9 @@ Sorbet/ConstantsFromStrings:
     - 'app/models/connected_account.rb'
 ```
 
-Let's explain the above.
+I'll explain the above:
 
-We’ll disable the `FalseSigil` check for now, since otherwise, we would have failures due to the `# typed: ignore`` entries added earlier. But we’ll enable `HasSigil` to ensure that any new files we add have a sigil.
+We’ll disable the `FalseSigil` check for now, since otherwise, we would have failures due to the `# typed: ignore` entries added earlier. But we’ll enable `HasSigil` to ensure that any new files we add have a sigil.
 
 We’ll also ignore the Dummy app used by the internal jumpstart gem, since that should be treated as a separate application.
 
@@ -136,15 +136,16 @@ Finally, we need to disable the ConstantsFromStrings check for one file, due to 
 
 With that done, we can now run `bundle exec standardrb --fix` which will add a `typed: false` entry to each file.
 
-On it's own that doesn't do anything, but it prepares the way that we can use Spoom Bump:
+On its own that doesn't do anything, but it prepares the way that we can use Spoom's bump:
 
 ```sh
 bundle exec spoom bump
 ```
+This helps us discover which files can be 'bumped' up a level of typing.
 
-You should see that a large number are now marked as `# typed: true``, even without us having to do any work.
+You should see that a large number are now marked as `# typed: true``, without us having to do any work.
 
-At this point, you can search for `# typed: false`` in *.rb and you’ll see there are around 100 files with that sigil.
+At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files with that sigil.
 
 Resolving those is outside the scope of this article, but you now have a strong starting point.
 
