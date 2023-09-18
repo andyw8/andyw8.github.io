@@ -6,7 +6,7 @@ published: true
 ---
 This post describes the process of setting up Sorbet and Tapioca for the [Jumpstart Pro](https://jumpstartrails.com) Rails template.
 
-Since Jumpstart Pro is a commercial product, I can’t share the full code, but if you’re a Jumpstart customer you can view the changes in [this branch](https://github.com/andyw8/jumpstart-pro-rails/tree/andyw8/sorbet) of my fork. I recommend viewing it as individual commits.
+Since Jumpstart Pro is a commercial product, I can’t share the full code, but if you’re a Jumpstart customer you can view the changes in [this branch](https://github.com/andyw8/jumpstart-pro-rails/tree/andyw8/sorbet) of my fork. I recommend viewing it as individual commits to understand it step-by-step.
 
 For this post, I'll assume you are starting from a freshly generated Jumpstart app. If you have already built your app on top of Jumpstart then it may take some more effort but the overall approach is the same.
 
@@ -16,9 +16,9 @@ I'll demonstrate the process in incremental steps, so your app can continue to b
 
 Start by creating a `sorbet` branch for the Sorbet migration. This will be fairly short-lived, and only needed for the initial setup.
 
-## CI
+## Setting up CI
 
-Although Jumpstart provides a GitHub Actions CI script, we'll instead use [setup-rails](https://www.andywaite.com/2022/04/15/reusable-github-actions-rails-workflow.html) since it will detect if Sorbet is in use and run additional checks. We'll also enable the `standard` option, since that's what Jumpstart uses instead of RuboCop.
+Although Jumpstart Pro provides a GitHub Actions CI script, we'll instead use [setup-rails](https://www.andywaite.com/2022/04/15/reusable-github-actions-rails-workflow.html) since it will detect if Sorbet is in use and run additional checks. We'll also enable the `standard` option, since that's what Jumpstart uses instead of RuboCop.
 
 ```yml
 name: Verify
@@ -36,30 +36,46 @@ jobs:
 
 ## Basic Setup
 
-Overall, the setup for Jumpstart Pro is not so different than for any other Rails app, but the optional dependencies complicate things a little: If there is code that references a gem that isn’t installed, then typechecking will fail. To simplify things for this guide, we can open the Jumpstart configuration and enable the following features:
+Overall, the setup for Jumpstart Pro is not so different than for any other Rails app, but the optional dependencies complicate things a little: If there is code that references a gem that isn’t installed, then typechecking will fail, even if it's within a `defined?` check. To simplify things for this guide, we will open the Jumpstart configuration page and enable the following features:
 
 * Payment Processor: Stripe
 * Background Queue: Sidekiq
 * ActsAsTenant
 * Facebook Omniauth Provider
 
-This should result in additions to `Gemfile.lock` which you should commit.
+This will result in some additions to `Gemfile.lock` which you should commit.
 
-Next, we'll add the `sorbet-static-and-runtime` and `tapoica` gems to the `Gemfile`, run `bundle` then `bundle exec tapioca init`.
+Next, we'll add the `sorbet-static-and-runtime` and `tapioca` gems to the `Gemfile`, run `bundle` then `bundle exec tapioca init`.
 
 The `init` command can take a long time to run (10 minutes or more), and it may seem like it has frozen. Have patience!
 
-You may be alarmed by the huge number of RBI files this creates, but you will very rarely need to open them.
+You may be alarmed by the huge number of RBI files this creates, but you will very rarely need to interact with them.
 
-After this is complete, we can commit everything.
+After this is complete, we can commit everything. Let's now run the typechecker:
 
-We can now run the typechecking:
+```sh
+$ bundle exec srb tc
+```
 
-`$ bundle exec srb tc`
+We should see about 20 errors. It's common to encounter errors when setting up Sorbet initially, usually due to known limitations in Sorbet or Tapioca.
 
-We should see about 20 errors. It's common to encounter errors when setting up Sorbet initially, often due to known limitations in Sorbet or Tapioca.
+In the case of Jumpstart, several are due [potentially ambiguous](https://sorbet.org/docs/error-reference#5068) definitions, which are easily fixed by using the full version of the definition. For example instead of:
 
-Several are due [potentially ambiguous](https://sorbet.org/docs/error-reference#5068) definitions, which are easily fixed by using the full version of the definition.
+```ruby
+module Admin
+  class User::ImpersonatesController < Admin::ApplicationController
+  end
+end
+```
+we need to write:
+```ruby
+module Admin
+  module User
+    class ImpersonatesController < Admin::ApplicationController
+    end
+  end
+end
+```
 
 Other errors are because some parts of the gem are not required by default. We need to add an entry to `require.rb`:
 
