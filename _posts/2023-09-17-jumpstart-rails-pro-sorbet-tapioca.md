@@ -10,7 +10,7 @@ Since Jumpstart Pro is a commercial product, I can’t share the full code, but 
 
 For this post, I'll assume you are starting from a freshly generated Jumpstart app. If you have already built your app on top of Jumpstart then it may take some more effort but the overall approach is the same.
 
-I'll demonstrate the process in incremental steps, so your app can continue to be deployed to production while type information is still being added. This follows Sorbet's philosophy of [Gradual Typing](https://sorbet.org/docs/gradual).
+I'll demonstrate the process in incremental steps, so your app can continue to be deployed while type information is still being added. This follows Sorbet's philosophy of [Gradual Typing](https://sorbet.org/docs/gradual).
 
 ## Preperation
 
