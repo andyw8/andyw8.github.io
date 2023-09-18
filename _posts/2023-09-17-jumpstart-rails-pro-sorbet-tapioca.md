@@ -99,7 +99,7 @@ At this point, there should be no more entries in `todo.rb` and running `tapioca
 
 ## Standard
 
-Although this project uses Standard rather than RuboCop, there are some useful cops in `rubocop-sorbet`, so we will add as a dependency.
+Although Jumpstart uses Standard rather than RuboCop, there are some useful cops in `rubocop-sorbet`, so we will add as a dependency.
 
 Then in `.standard.yml`, we’ll use Standard’s [extend_config](https://blog.testdouble.com/posts/2023-01-19-super-standard-adding-gem-extensions-and-custom-rules/) feature to reference a RuboCop Sorbet configuration file:
 
