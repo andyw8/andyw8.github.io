@@ -169,6 +169,6 @@ You should see that a large number are now marked as `# typed: true`, without us
 
 ## Next Steps
 
-At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that don't yet have typing typing for. Resolving those is outside the scope of this article, but you now have a strong starting point.
+At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that aren't yet typed. Resolving all those is outside the scope of this post, but you now have a strong starting point.
 
-You’ll notice that we haven’t written any signatures yet. But even without that, we can start benefiting from Sorbet’s checks for things such as calls to non-existing methods, or unreachable code.
+You’ll notice that we haven’t written any signatures yet. But even without those, we can start benefiting from Sorbet’s checks for things such as calls to non-existing methods, or unreachable code.
