@@ -69,7 +69,7 @@ require "administrate/base_dashboard"
 
 and then re-run `bundle exec tapioca gem administrate`.
 
-After this there should be only remaining error, due to the Sorbet limitation that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
+After this there should be only one remaining error, which due to the Sorbet limitation that "include must only contain constant literals". For now, we can just add `# typed: ignore` for this file.
 
 At this point you can push to CI and everything should be green again. If you wish, you can merge the `sorbet` branch into `main` and continue the remaining work in other branches.
 
