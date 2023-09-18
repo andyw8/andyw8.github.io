@@ -145,8 +145,6 @@ This helps us discover which files can be 'bumped' up a level of typing.
 
 You should see that a large number are now marked as `# typed: true``, without us having to do any work.
 
-At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files with that sigil.
-
-Resolving those is outside the scope of this article, but you now have a strong starting point.
+At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that we need to enable typing for.  Resolving those is outside the scope of this article, but you now have a strong starting point.
 
 You’ll notice that we haven’t written any signatures yet. But even without that, we will benefit from Sorbet’s checks for such as calls to non-existing methods, or unreachable code.
