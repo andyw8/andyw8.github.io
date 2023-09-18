@@ -77,7 +77,7 @@ We intentionally never manually edit `todo.rb` - we’ll make a change, and then
 
 Many of the remaining entries in `todo.rb` are due to optional gems, where they are conditionally referenced in an initializer. We can mark these as `# typed: ignore`, then regenerate `todo.rb`.
 
-Next, we have some entries in `todo.rb` that relate to the Devise and Noticed gems. For gems that make use of metaprogramming, we often need to give Sorbet some help:
+Next, we have some entries in `todo.rb` that relate to the Devise and Noticed gems. For gems that make use of metaprogramming, we often need to give Sorbet some help to adding [shims](https://sorbet.org/docs/rbi).
 
 ```ruby
 # sorbet/shims.rbi
@@ -88,7 +88,7 @@ class Devise::SessionsController; end
 class Noticed::NotificationChannel; end
 ```
 
-For `Minitest::Mock` and `Sidekiq::Web` we again to add entries to `require.rb`:
+For `Minitest::Mock` and `Sidekiq::Web` we again need to add entries to `require.rb`:
 
 ```ruby
 require "minitest/mock"
