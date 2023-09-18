@@ -146,21 +146,19 @@ Sorbet/ConstantsFromStrings:
     - 'app/models/connected_account.rb'
 ```
 
-I'll explain the above:
-
-We’ll disable the `FalseSigil` check for now, since otherwise, we would have failures due to the `# typed: ignore` entries added earlier. But we’ll enable `HasSigil` to ensure that any new files we add have a sigil.
+We disable the `FalseSigil` check for now, since otherwise, we would have failures due to the `# typed: ignore` entries added earlier. But we enable `HasSigil` to ensure that any new files we add have a sigil.
 
 We’ll also ignore the Dummy app used by the internal jumpstart gem, since that should be treated as a separate application.
 
-Finally, we need to disable the ConstantsFromStrings check for one file, due to  Sorbet's limitations for `const_get`.
+Finally, we need to disable the `ConstantsFromStrings` check for one file, due to Sorbet's limitations for `const_get`.
 
 With that done, we can now run `bundle exec standardrb --fix` which will add a `typed: false` entry to each file.
 
-On its own that doesn't do anything, but it prepares the way that we can use Spoom.
+On its own that doesn't do anything, but it prepares the way so that we can use Spoom.
 
 ## Spoom
 
-Spoom consists of various tools, one of which is the `bump` command:
+Spoom consists of several tools, one of which is the `bump` command:
 
 ```sh
 bundle exec spoom bump
@@ -171,6 +169,6 @@ You should see that a large number are now marked as `# typed: true`, without us
 
 ## Next Steps
 
-At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that we need to enable typing for.  Resolving those is outside the scope of this article, but you now have a strong starting point.
+At this point, you can search for `# typed: false` in `*.rb` and you’ll see there are around 100 files remaining that don't yet have typing typing for. Resolving those is outside the scope of this article, but you now have a strong starting point.
 
-You’ll notice that we haven’t written any signatures yet. But even without that, we will benefit from Sorbet’s checks for things such as calls to non-existing methods, or unreachable code.
+You’ll notice that we haven’t written any signatures yet. But even without that, we can start benefiting from Sorbet’s checks for things such as calls to non-existing methods, or unreachable code.
