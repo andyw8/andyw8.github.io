@@ -162,7 +162,7 @@ We'll ignore the Dummy app used by the internal jumpstart gem, since that should
 
 We also we need to disable the `ConstantsFromStrings` check for one file, due to Sorbet's limitations for `const_get`.
 
-With that done, we can now run `bundle exec standardrb --fix` which will add a `typed: false` entry to each file. This happens because rubocop-sorbet's default configuration enables the `Sorbet/FalseSigil` cop, which ensures all files are at a strictness of a least `false`.h
+With that done, we can now run `bundle exec standardrb --fix` which will add a `typed: false` entry to each file. This happens because rubocop-sorbet's default configuration enables the `Sorbet/FalseSigil` cop, which ensures all files are at a strictness of a least `false`.
 
 On its own that doesn't do anything, but it prepares the way so that we can use Spoom.
 
