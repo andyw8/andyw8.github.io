@@ -75,3 +75,7 @@ Check my [Past Work](/work) to see the clients I've worked with.
 
 [Financeit]: https://financeit.io
 [Shopify]: https://shopify.com
+
+## Trivia
+
+* My origin of my surname: https://en.wikipedia.org/wiki/Wait_(musician)
