@@ -78,4 +78,4 @@ Check my [Past Work](/work) to see the clients I've worked with.
 
 ## Trivia
 
-* My origin of my surname: https://en.wikipedia.org/wiki/Wait_(musician)
+* [The origin of my surname](https://en.wikipedia.org/wiki/Wait_(musician))
