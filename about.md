@@ -15,7 +15,7 @@ where I work in the Ruby Developer Experience team at [Shopify].
 
 * [Résumé (CV)](http://cv.andywaite.com)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
-* [Twitter](https://twitter.com/andyw8)
+* [Bluesky](http://bsky.app/profile/andyw8.bsky.social)
 * [GitHub](https://github.com/andyw8)
 
 Below are some of my areas of expertise:
