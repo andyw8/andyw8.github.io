@@ -18,5 +18,5 @@ A brief explanation of how each command is used:
 * `strings` to extract any text found within the file
 * `tail` to keep only the last line (the one with the JSON)
 * `sed` to discard the part of the line before the JSON structure
-* `jq` to extract the specific part of the JSON containing the encoded text
+* [`jq`](https://github.com/jqlang/jq) to extract the specific part of the JSON containing the encoded text (the `-r` flag removes the quotes).
 * `base64` to decode it
