@@ -19,7 +19,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Software Development Consultant, Ruby and Rails Developer, Toronto
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.andywaite.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: andyw8
 github_username:  andyw8
 
 # Build settings
@@ -27,7 +26,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-twitter-plugin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -38,5 +36,5 @@ plugins:
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
-#   - vendor/gems/
+#   - vendor/gems
 #   - vendor/ruby/
