@@ -21,7 +21,7 @@
 title: Andy Waite
 email: contact@andywaite.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software Development Consultant, Ruby and Rails Developer, Toronto
+  Ruby and Rails Developer, Toronto
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.andywaite.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: andyw8
@@ -30,7 +30,6 @@ github_username: andyw8
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
