@@ -4,11 +4,10 @@ title: Work
 permalink: /work/
 ---
 
-I currently work in the Ruby Developer Experience team at [Shopify], Toronto.
-
 ### Past Work
 
 * Engineering Lead at [Financeit], Toronto (2016 – 2020)
+* Senior Developer in the Ruby Developer Experience team at [Shopify] (2020-2025)
 
 From 2010 to 2016 I ran an independent software consultancy in London, UK.
 Clients included:
