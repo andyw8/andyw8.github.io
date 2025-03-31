@@ -116,7 +116,7 @@ The test can be run by clicking on the `▷` in the gutter, or with the Command-
 
 # Advanced LSP Troubleshooting
 
-It can be sometimes be useful see the underlying requests and responses for the language server. In the `debug: language server logs` window, click the second menu, then enable `RPC Messages`:
+It can sometimes be useful see the underlying requests and responses for the language server. In the `debug: language server logs` window, click the second menu, then enable `RPC Messages`:
 
 ![Ruby LSP startup](/assets/images/zed-lsp-rpc-logging.png)
 
