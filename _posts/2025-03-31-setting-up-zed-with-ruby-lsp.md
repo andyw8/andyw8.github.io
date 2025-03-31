@@ -50,7 +50,7 @@ The implementation uses *pull diagnostics*, a newer aspect of the LSP specificat
 
 There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this, but until then there is a workaround as long as your project uses RuboCop.
 
-First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53, and the Zed extension already has built-in support for it. This language server does _not_ use pull diagnostics, so it's compatible with Zed.
+First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53, and the Zed extension already has built-in support for it. This language server does _not_ use pull diagnostics, so its diagnostics are compatible with Zed.
 
 Normally when using Ruby LSP we don't need RuboCop's own language server since its built-in, but here it becomes a useful fallback. We can configure Zed such that we use RuboCop's LSP _only_ for diagnostics, and Ruby LSP for everything else. First, we'll disable `diagnostics` for Ruby LSP to avoid sending unnecessary requests:
 
