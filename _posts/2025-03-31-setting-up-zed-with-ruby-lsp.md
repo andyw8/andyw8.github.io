@@ -88,9 +88,9 @@ If your project uses Standard rather than RuboCop then you can try [this branch]
 
 So far I've shown settings as being added to the Zed's global configuration.
 
-If you only ever work on a single Ruby project, then it doesn't really matter if you all your settings are global. But many of us will work on codebases with different configurations, so having more granular control is often necessary.
+If you only ever work on a single Ruby project, then it doesn't really matter if you all your settings are global. But many of us work on codebases with different configurations, such as for linting and formatting, so having more granular control is often necessary.
 
-You can add project settings to `.zed/settings.json` in your project directory. These settings will be merged with the global settings, so normally you'll only need a few lines of configuration.
+You can add project-specific settings to `.zed/settings.json` in your project directory. These settings will be merged with the global settings, so normally you'll only need a few lines of configuration.
 For example, you might have some projects that use RuboCop but others that use Standard.
 
 # Running tests
