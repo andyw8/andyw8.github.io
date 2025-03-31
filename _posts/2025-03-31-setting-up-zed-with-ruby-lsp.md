@@ -50,7 +50,7 @@ The implementation uses *pull diagnostics*, a newer aspect of the LSP specificat
 
 There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this, but until then there is a workaround as long as your project uses RuboCop.
 
-First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53. Zed already has built-in support for it. This language server does _not_ use pull diagnostics, so it's compatible with Zed.
+First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53, and the Zed extension already has built-in support for it. This language server does _not_ use pull diagnostics, so it's compatible with Zed.
 
 Normally when using Ruby LSP we don't need RuboCop's own language server since its built-in, but here it becomes a useful fallback. We can configure Zed such that we use RuboCop's LSP _only_ for diagnostics, and Ruby LSP for everything else. First, we'll disable `diagnostics` for Ruby LSP to avoid sending unnecessary requests:
 
@@ -80,7 +80,7 @@ Then we'll add `rubocop` as a secondary language server for RuboCop:
 }
 ```
 
-Note: Although not documented, it seems that the order is important as only the first entry is use for formatting.
+Note: Although apparently not documented, it seems that the order is important as only the first language server entry is use for formatting.
 
 If your project uses Standard rather than RuboCop then you can try [this branch](https://github.com/zed-extensions/ruby/pull/25).
 
@@ -122,13 +122,13 @@ It can be sometimes be useful see the underlying requests and responses for the 
 
 # What's Missing
 
-- If you're coming from VS Code with Ruby LSP, you might notice some feature are not available. There's two main reasons behind things:
+- If you're coming from VS Code with Ruby LSP, you might notice some feature are not available. There's two main reasons behind this:
 
   - Some Ruby LSP features depends on custom behaviour in the VS Code extension. Those would need to be reimplemented for Zed within the Ruby extension.
 
   - Some parts of the LSP specification are not yet implemented in Zed.
 You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed issue to learn more.
 
-- Zed does not yet have a visual debugger, so if you're used to that in VS Code then it might be a little painful to use terminal-based debugging. A preview of a debugger was recently [merged](https://github.com/zed-industries/zed/pull/13433). I haven't tried it yet but I expect that it eventually be usable for Ruby.
+- Zed does not yet have a visual debugger, so if you're used to that in VS Code then it might be a little awkward to use [terminal-based debugging](https://st0012.dev/my-ruby-debugging-tips-in-2025). A preview of a debugger was recently [merged](https://github.com/zed-industries/zed/pull/13433). I haven't tried it yet but I expect that it eventually be usable for Ruby.
 
 - Zed supports [Snippets](https://zed.dev/docs/snippets) but the Ruby extension doesn't yet have any. I have a [PR](https://github.com/zed-extensions/ruby/pull/53) in progress to add them.
