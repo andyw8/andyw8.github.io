@@ -97,7 +97,7 @@ For example, you might have some projects that use RuboCop but others that use S
 
 One very useful feature when using Ruby LSP in VS Code is [Code Lens](https://shopify.github.io/ruby-lsp/#code-lens), which adds a `Run in Terminal` link to each test, and shows the result in the integrated terminal.
 
-This LSP feature is not supported by Zed, but we can use the poweful [Tasks](https://zed.dev/docs/tasks) feature to do something similar.
+This LSP feature is not supported by Zed, but we can use the powerful [Tasks](https://zed.dev/docs/tasks) feature to do something similar.
 
 For example, to add a task for running Rails tests, we can create a `.zed/tasks.json` file:
 
