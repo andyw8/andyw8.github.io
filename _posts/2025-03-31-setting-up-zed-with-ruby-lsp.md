@@ -46,7 +46,7 @@ If ever it seems that Ruby LSP is not running, this is the first place to check 
 
 The Diagnostics feature is used by Ruby LSP to show possible errors as you type, as illustrated [here](https://shopify.github.io/ruby-lsp/#diagnostics).
 
-The implementation uses *pull diagnostics*, a newer aspect in the LSP specification where the client requests diagnostics from the server, instead of the server notifying the client.
+The implementation uses *pull diagnostics*, a newer aspect of the LSP specification where the client requests diagnostics from the server, instead of the server notifying the client.
 
 There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this, but until then there is a workaround as long as your project uses RuboCop.
 
