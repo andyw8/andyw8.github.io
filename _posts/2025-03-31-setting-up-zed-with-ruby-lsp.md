@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-[Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. And their close [collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes for an strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
+[Zed](https://zed.dev) is a modern, high-performance some Ruby LSP feature is not rcode editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. And their close [collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes for an strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
 In this post you'll learn how to set up Ruby LSP with Zed, and how to troubleshoot if things aren't working. I'll also share some alteratives for features that aren't currently available in Zed.
 
@@ -40,7 +40,7 @@ To verify things are working, open a Ruby file, then choose `debug: open languag
 
 If there are multiple language servers running, then you'll need to first select `ruby-lsp` from the menu at the top-left.
 
-If ever it seems that some Ruby LSP feature is not running, this is the first place to check for any errors.
+If ever it seems that Ruby LSP is not running, this is the first place to check for errors.
 
 # Enabling Diagnostics
 
