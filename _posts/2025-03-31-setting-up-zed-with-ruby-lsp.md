@@ -68,7 +68,7 @@ Normally when using Ruby LSP we don't need RuboCop's own language server since i
 }
 ```
 
-Then we'll add `rubocop` as a secondary language server for RuboCop:
+Then we'll add `rubocop` as a secondary language server for Ruby:
 
 ```json
 {
