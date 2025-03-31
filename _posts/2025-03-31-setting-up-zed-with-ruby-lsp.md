@@ -10,7 +10,7 @@ In this post you'll learn how to set up Ruby LSP with Zed, and how to troublesho
 
 # Setting up Ruby Support
 
-Zed's Ruby support comes from the [official Ruby extension](https://github.com/zed-extensions/ruby), created by [Vitaly Slobodin](https://bsky.app/profile/vitallium.bsky.social). You can enable through `zed: extensions`.
+Zed's Ruby support comes from the [official Ruby extension](https://github.com/zed-extensions/ruby), created by [Vitaly Slobodin](https://bsky.app/profile/vitallium.bsky.social). You can enable it through `zed: extensions`.
 
 As with all Zed extensions, it is written in Rust. Its documentation can be found [here](https://zed.dev/docs/languages/ruby), as part of the official docs.
 
