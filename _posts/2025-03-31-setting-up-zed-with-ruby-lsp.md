@@ -16,9 +16,9 @@ As with all Zed extensions, it is written in Rust. Its documentation can be foun
 
 # Configuring Ruby LSP
 
-Zed has good support for the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/), meaning there's a lot of tooling already available that can be used.
+Zed has good built-in support for the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/), meaning there's a lot of tooling already available that can be used.
 
-For Ruby, Zed defaults to using [Solargraph](https://solargraph.org) as its language server for Ruby.
+Zed defaults to using [Solargraph](https://solargraph.org) as its language server for Ruby.
 
 My preference is to use [Ruby LSP](https://github.com/Shopify/ruby-lsp), since I'm a [contributor](https://github.com/Shopify/ruby-lsp/graphs/contributors). It can configured in Zed's settings as follows:
 
