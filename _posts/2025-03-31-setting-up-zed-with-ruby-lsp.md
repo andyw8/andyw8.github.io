@@ -86,7 +86,7 @@ If your project uses Standard rather than RuboCop then you can try [this branch]
 
 # Disable onTypeFormatting
 
-There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) with cursor placement when trying to type a `|` for block arguments, so you may want to disable the `onTypeFormatting` for now:
+There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) with cursor placement when trying to type a `|` for block arguments, so you may want to disable `onTypeFormatting` for now:
 
 {
   "lsp": {
