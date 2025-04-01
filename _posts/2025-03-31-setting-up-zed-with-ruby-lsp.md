@@ -70,6 +70,9 @@ Normally when using Ruby LSP we don't need RuboCop's own language server since i
 }
 ```
 
+Note: The values for `initialization_options` are passed directly to Ruby LSP. You can see the full list [here](https://shopify.github.io/ruby-lsp/editors.html#all-initialization-options).
+
+
 Then we'll add `rubocop` as a secondary language server for Ruby:
 
 ```json
