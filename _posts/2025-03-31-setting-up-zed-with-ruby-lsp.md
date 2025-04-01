@@ -84,6 +84,22 @@ Note: Although apparently not documented, it seems that the order is important a
 
 If your project uses Standard rather than RuboCop then you can try [this branch](https://github.com/zed-extensions/ruby/pull/25).
 
+# Disable onTypeFormatting
+
+There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) with cursor placement when trying to type a `|` for block arguments, so you may want to disable the `onTypeFormatting` for now:
+
+{
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "onTypeFormatting": false,
+        }
+      }
+    }
+  }
+}
+
 # Global vs Local Settings
 
 So far I've shown settings as being added to the Zed's global configuration.
