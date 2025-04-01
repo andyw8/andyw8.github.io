@@ -88,6 +88,7 @@ If your project uses Standard rather than RuboCop then you can try [this branch]
 
 There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) with cursor placement when trying to type a `|` for block arguments, so you may want to disable `onTypeFormatting` for now:
 
+```json
 {
   "lsp": {
     "ruby-lsp": {
@@ -99,6 +100,7 @@ There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) with cur
     }
   }
 }
+```
 
 # Global vs Local Settings
 
