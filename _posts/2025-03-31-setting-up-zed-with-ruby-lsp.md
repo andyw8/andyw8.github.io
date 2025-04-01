@@ -18,9 +18,7 @@ As with all Zed extensions, it is written in Rust. Its documentation can be foun
 
 Zed has good built-in support for the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/), meaning there's a lot of tooling already available that can be used.
 
-Zed defaults to using [Solargraph](https://solargraph.org) as its language server for Ruby.
-
-My preference is to use [Ruby LSP](https://github.com/Shopify/ruby-lsp), since I'm a [contributor](https://github.com/Shopify/ruby-lsp/graphs/contributors). It can configured in Zed's settings as follows:
+Zed defaults to using [Solargraph](https://solargraph.org) as its language server for Ruby, but preference is to use [Ruby LSP](https://github.com/Shopify/ruby-lsp), since I'm a [contributor](https://github.com/Shopify/ruby-lsp/graphs/contributors). It can configured in Zed's settings as follows:
 
 ```json
 {
@@ -36,7 +34,7 @@ My preference is to use [Ruby LSP](https://github.com/Shopify/ruby-lsp), since I
 
 Note: I've noticed that some configuration changes don't seem to apply until you fully quit and reload the editor (`workspace: reload` isn't enough), so you may need to do that in some situations.
 
-To verify things are working, open a Ruby file, then choose `debug: open language server logs` from the command menu and open a Ruby file. You should see something like this:
+To verify things are working, open a Ruby file, then choose `debug: open language server logs` from the command menu. The output should look something like this:
 
 ![Ruby LSP startup](/assets/images/zed-ruby-lsp-startup.png)
 
