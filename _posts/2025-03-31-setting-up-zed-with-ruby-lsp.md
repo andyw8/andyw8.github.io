@@ -32,6 +32,8 @@ My preference is to use [Ruby LSP](https://github.com/Shopify/ruby-lsp), since I
 }
 ```
 
+(The docs suggest disabling each language server that you *don't* want with `!`, and using `"..."` to enable the rest, but I find it simpler to just list the ones you *do* want).
+
 Note: I've noticed that some configuration changes don't seem to apply until you fully quit and reload the editor (`workspace: reload` isn't enough), so you may need to do that in some situations.
 
 To verify things are working, open a Ruby file, then choose `debug: open language server logs` from the command menu and open a Ruby file. You should see something like this:
