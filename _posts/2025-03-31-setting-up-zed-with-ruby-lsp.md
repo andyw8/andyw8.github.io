@@ -153,3 +153,7 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 - Zed does not yet have a visual debugger, so if you're used to that in VS Code then it might be a little awkward to use [terminal-based debugging](https://st0012.dev/my-ruby-debugging-tips-in-2025). A preview of a debugger was recently [merged](https://github.com/zed-industries/zed/pull/13433). I haven't tried it yet but I expect that it eventually be usable for Ruby.
 
 - Zed supports [Snippets](https://zed.dev/docs/snippets) but the Ruby extension doesn't yet have any. I have a [PR](https://github.com/zed-extensions/ruby/pull/53) in progress to add them.
+
+# Other Useful Resources
+
+For ERB, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
