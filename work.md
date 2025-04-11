@@ -6,8 +6,8 @@ permalink: /work/
 
 ### Past Work
 
-* Engineering Lead at [Financeit], Toronto (2016 – 2020)
 * Senior Developer in the Ruby Developer Experience team at [Shopify] (2020-2025)
+* Engineering Lead at [Financeit], Toronto (2016 – 2020)
 
 From 2010 to 2016 I ran an independent software consultancy in London, UK.
 Clients included:
