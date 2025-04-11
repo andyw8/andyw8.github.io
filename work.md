@@ -77,5 +77,5 @@ See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other 
 [Top Targets]: https://www.tes.co.uk/article.aspx?storycode=2382886
 [SIMUL8]: http://www.simul8.com
 [Made]: https://www.madetech.com
-[Résumé (CV)]: http://cv.andywaite.com
+[Resume]: https://www.andywaite.com/resume
 [LinkedIn]: https://www.linkedin.com/in/andyw8/

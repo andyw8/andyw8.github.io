@@ -13,7 +13,7 @@ and improve by adopting modern software engineering practices.
 I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto,
 where I work in the Ruby Developer Experience team at [Shopify].
 
-* [Résumé (CV)](http://cv.andywaite.com)
+* [Resume](https://www.andywaite.com/resume)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
 * [Bluesky](http://bsky.app/profile/andyw8.bsky.social)
 * [GitHub](https://github.com/andyw8)
