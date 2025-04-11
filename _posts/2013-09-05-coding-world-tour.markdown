@@ -5,7 +5,7 @@ date: 2013-09-14 16:25
 comments: true
 external-url:
 categories: coding world tour
-published: true
+published: false
 draft: false
 ---
 In the culinary world, a [*stage*](http://en.wikipedia.org/wiki/Stage_%28cooking%29) (pronounced *stazhje*, from the French *stagiaire*) is an unpaid internship when a cook or chef works briefly, for free, in another chef's kitchen to learn and be exposed to new techniques and cuisines.

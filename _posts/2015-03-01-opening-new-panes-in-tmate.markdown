@@ -3,8 +3,9 @@ layout: post
 title: "Opening new panes in tmate"
 date: 2015-03-01 10:35
 comments: true
-external-url: 
+external-url:
 categories: remote-pairing
+published: false
 ---
 [tmate][1] is a fork of tmux for easily setting up a remote pairing session.
 When using normal tmux, I have the following configuration so that new panes and windows remember the previous working path:

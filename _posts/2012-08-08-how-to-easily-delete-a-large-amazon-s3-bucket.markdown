@@ -4,6 +4,7 @@ title: "How to easily delete a large Amazon S3 Bucket"
 date: 2012-08-08 14:32
 comments: true
 categories: s3 aws
+published: false
 ---
 I recently had to delete an S3 bucket containing over 200,000 objects. S3 prevents deletion of non-empty buckets, and deleting this many objects is virtually impossible using any GUI. I looked into an API-based approach but support for [multi-object delete](http://aws.amazon.com/about-aws/whats-new/2011/12/07/amazon-s3-announces-multi-object-delete/) still seems limited.
 

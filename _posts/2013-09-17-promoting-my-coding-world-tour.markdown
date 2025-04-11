@@ -6,7 +6,7 @@ comments: true
 external-url:
 categories: coding world tour
 draft: false
-published: true
+published: false
 ---
 
 ## Previous Post: [My Coding World Tour](http://blog.andywaite.com/2013/09/14/coding-world-tour/)

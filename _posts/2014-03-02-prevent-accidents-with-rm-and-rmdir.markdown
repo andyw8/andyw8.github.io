@@ -3,8 +3,9 @@ layout: post
 title: "Preventing Accidental File Deletions"
 date: 2014-03-02 15:10
 comments: true
-external-url: 
+external-url:
 categories: shell
+published: false
 ---
 Many of us learned the hard way that `rm` and `rmdir` are unforgiving. There's no Trash to recover from, and there's no undo.
 
@@ -12,7 +13,7 @@ There are [many legendary stories](http://www.quora.com/Linux/What-are-some-craz
 
 In time you learn to be wary of using those commands, but once in a while you'll screw up and delete something you shouldn't have.
 
-There are a few articles about how to alter the behaviour of `rm` so that it moves to the trash instead of permanently deleting. But this is dangerous if you happen to be using a different machine which doesn't have this behaviour enabled. 
+There are a few articles about how to alter the behaviour of `rm` so that it moves to the trash instead of permanently deleting. But this is dangerous if you happen to be using a different machine which doesn't have this behaviour enabled.
 
 A better option is to install [rmtrash](http://www.nightproductions.net/cli.htm) (also available via Homebrew). The `rmtrash` command can be use to delete both files and directories, and as the name suggests it moves the files to the Trash instead of parmanently deleting them.
 

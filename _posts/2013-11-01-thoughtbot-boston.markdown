@@ -6,7 +6,7 @@ comments: true
 external-url:
 categories:
 draft: false
-published: true
+published: false
 ---
 Thoughtbot's office is next to the scenic [Boston Common][8], and was just a short walk from my hotel.
 

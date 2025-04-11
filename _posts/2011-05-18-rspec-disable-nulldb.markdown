@@ -1,6 +1,7 @@
 ---
 title: How to disable NullDB for a particular RSpec example
 layout: post
+published: false
 ---
 I recently discovered the [nulldb] gem which prevents tests from hitting the database, meaning they run much faster.
 

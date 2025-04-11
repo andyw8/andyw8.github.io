@@ -2,6 +2,7 @@
 layout: post
 title: "Dissertation: Some Possible Web Refactorings"
 tags: dissertation
+published: false
 ---
 Sticking with Martin Fowler's style, I've tried to use the naming convention of [verb] [subject].
 
@@ -20,7 +21,7 @@ Ajax can be used to call the same validation code on the server as each form fie
 
 **Extract In-line Style Attributes**
 
-Having style attributes scattered through a page makes maintainance difficult. 
+Having style attributes scattered through a page makes maintainance difficult.
 It is normally better to reference elements from a stylesheet using *class* and *id*.
 
 Next, I'll discuss how these refactoring can be applied in a safe and systematic fashion.

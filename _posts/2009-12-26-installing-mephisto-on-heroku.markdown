@@ -1,6 +1,7 @@
 ---
 title: Installing Mephisto on Heroku
 layout: post
+published: false
 ---
 Since Heroku apps run in a read-only filesystem, the normal Mephisto installation method won't work. Here's how to work around that.
 
@@ -44,7 +45,7 @@ Use the -f flag to force add them:
 $ git add config/initializers/session_store.rb -f
 $ git add themes/ -f
 $ git add public/plugin_assets/ -f
-$ git commit -m "adding required files for Heroku" 
+$ git commit -m "adding required files for Heroku"
 {% endhighlight %}
 
 You’re now ready to deploy onto Heroku:

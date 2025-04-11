@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Announcing cheepr.com
+published: false
 ---
 A few weeks ago I quietly launched [cheepr.com], a "search agent for Amazon
 Marketplace which provides a personalised feed of price drops and availability".

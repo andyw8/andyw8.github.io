@@ -6,7 +6,7 @@ comments: true
 external-url:
 categories:
 draft: false
-published: true
+published: false
 ---
 [TableXI](http://www.tablexi.com/) are based in a spacious loft-style office in the West Loop area of Chicago. The place has lots of nice touches highlighting the history and culture of the company, such as the recreation of their logo using just pins and string:
 

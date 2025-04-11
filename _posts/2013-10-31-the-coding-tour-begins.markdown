@@ -6,7 +6,7 @@ comments: true
 external-url:
 categories:
 draft: false
-published: true
+published: false
 ---
 So after the past several months of planning, and a few hectic weeks of moving out out of my apartment, I've at last set off on my World Coding Tour. I'm writing this from a hotel room in Boston, where I'll be visiting [ThoughtBot](http://thoughtbot.com/) tomorrow.
 

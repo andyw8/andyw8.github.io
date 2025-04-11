@@ -4,6 +4,7 @@ title: "RubyMotion App Template"
 date: 2012-05-28 22:17
 comments: true
 categories: rubymotion
+published: true
 ---
 I've been trying out [RubyMotion](http://www.rubymotion.com/) lately, and I've created a simple template project with some sensible defaults to make it quick and easy to start a new app:
 

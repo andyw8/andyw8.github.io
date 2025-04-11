@@ -2,6 +2,7 @@
 title: "Dissertation: Refactoring HTML and CSS with help from wkpdf"
 layout: post
 tags: dissertation
+published: false
 ---
 I've been thinking about how wkpdf could be useful when refactoring code in order
 to avoid inadvertently changing the appearance of a page.
@@ -56,14 +57,14 @@ java -cp CCLib.jar:.:log4j-1.2.15.jar:PDFC.jar:PDFParser.jar com.inet.pdfc.PDFC
 before.pdf after.pdf
 INFO      XMLConfiguration 24.11.2010 20:41:52,235: Loading properties from
 config.xml
-INFO          ReportRunner 24.11.2010 20:41:52,335: Scanning before.pdf... 
+INFO          ReportRunner 24.11.2010 20:41:52,335: Scanning before.pdf...
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,927: before.pdf: No differences
 found!
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,928: ------
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,928: Result Summary
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,929: ------
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,929: File Name
-| # of Differences             
+| # of Differences
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,929: ----------------------------
 INFO  ConsoleResultHandler 24.11.2010 20:41:53,930: before.pdf
 | 0
