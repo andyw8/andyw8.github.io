@@ -150,7 +150,7 @@ It can sometimes be useful see the underlying requests and responses for the lan
   - Some parts of the LSP specification are not yet implemented in Zed.
 You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed issue to learn more.
 
-- Changes aren't indexed until Zed is restarted. See https://github.com/Shopify/ruby-lsp/issues/3384
+- Changes aren't indexed until Zed is restarted. See [Shopify/ruby-lsp#3384](https://github.com/Shopify/ruby-lsp/issues/3384).
 
 - Zed does not yet have a visual debugger, so if you're used to that in VS Code then it might be a little awkward to use [terminal-based debugging](https://st0012.dev/my-ruby-debugging-tips-in-2025). A preview of a debugger was recently [merged](https://github.com/zed-industries/zed/pull/13433). I haven't tried it yet but I expect that it eventually be usable for Ruby.
 
