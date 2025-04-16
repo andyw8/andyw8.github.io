@@ -159,3 +159,5 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 # Other Useful Resources
 
 For ERB, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
+
+For working with Hotwire, there is the [Zed Stimulus](https://github.com/vitallium/zed-stimulus) extension.
