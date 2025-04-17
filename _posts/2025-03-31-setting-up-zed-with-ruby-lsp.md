@@ -165,3 +165,5 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 For ERB, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
 
 For working with Hotwire, there is the [Zed Stimulus](https://github.com/vitallium/zed-stimulus) extension.
+
+To toggle between a test and its implementation, try [zed-test-toggle](https://github.com/MoskitoHero/zed-test-toggle).
