@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-(Last updated: 2025-04-17)
+(Last updated: 2025-04-18)
 
 [Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. With recent rapid development in AI, Zed's [close collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes it a strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
@@ -44,7 +44,7 @@ To verify things are working, open a Ruby file, then choose `debug: open languag
 
 ![Ruby LSP startup](/assets/images/zed-ruby-lsp-startup.png)
 
-If there are multiple language servers running, then you'll need to first select `ruby-lsp` from the menu at the top-left.
+If there are multiple language servers running, then you'll need to first select the `ruby-lsp` log from the menu at the top left.
 
 If ever it seems that Ruby LSP is not running, this is the first place to check for errors.
 
@@ -54,7 +54,7 @@ The Diagnostics feature is used by Ruby LSP to show possible errors as you type,
 
 The implementation uses *pull diagnostics*, a newer aspect of the LSP specification where the client requests diagnostics from the server, instead of the server notifying the client.
 
-There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this, but until then there is a workaround as long as your project uses RuboCop.
+There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this in Zed, but until then there is a workaround as long as your project uses RuboCop.
 
 First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53, and the Zed extension already has built-in support for it. This language server does _not_ use pull diagnostics, so its diagnostics are compatible with Zed.
 
