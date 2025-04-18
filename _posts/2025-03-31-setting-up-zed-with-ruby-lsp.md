@@ -149,7 +149,7 @@ It can sometimes be useful see the underlying requests and responses for the lan
 
 # What's Missing
 
-- If you're coming from VS Code with Ruby LSP, you might notice some feature are not available. There's two main reasons behind this:
+- If you're coming from VS Code with Ruby LSP, you might notice some features are not available. There's two main reasons behind this:
 
   - Some Ruby LSP features depends on custom behaviour in the VS Code extension. Those would need to be reimplemented for Zed within the Ruby extension.
 
