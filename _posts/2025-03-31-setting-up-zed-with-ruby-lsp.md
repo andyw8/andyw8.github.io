@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-(Last updated: 2025-04-18)
+(Last updated: 2025-05-07)
 
 [Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. With recent rapid development in AI, Zed's [close collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes it a strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
@@ -158,7 +158,7 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 
 - Changes aren't indexed until Zed is restarted. See [Shopify/ruby-lsp#3384](https://github.com/Shopify/ruby-lsp/issues/3384).
 
-- Zed does not yet have a visual debugger, so if you're used to that in VS Code then it might be a little awkward to use [terminal-based debugging](https://st0012.dev/my-ruby-debugging-tips-in-2025). A preview of a debugger was recently [merged](https://github.com/zed-industries/zed/pull/13433). I haven't tried it yet but I expect that it eventually be usable for Ruby.
+- A debugger is in [beta](https://zed.dev/debugger), and there's a [PR](https://github.com/zed-industries/zed/pull/30126) open for supporting rdbg.
 
 - Zed supports [Snippets](https://zed.dev/docs/snippets) but the Ruby extension doesn't yet have any. I have a [PR](https://github.com/zed-extensions/ruby/pull/53) in progress to add them.
 
