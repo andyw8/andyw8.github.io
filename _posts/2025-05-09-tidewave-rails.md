@@ -2,6 +2,7 @@
 layout: post
 title: A first look at Tidewave for Rails
 date: 2025-03-31
+published: false
 ---
 Tidewave is a new MCP tool avilable for Rails and Phoenix.
 
