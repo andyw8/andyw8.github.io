@@ -156,7 +156,7 @@ It can sometimes be useful see the underlying requests and responses for the lan
   - Some parts of the LSP specification are not yet implemented in Zed.
 You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed issue to learn more.
 
-- ~Changes aren't indexed until Zed is restarted. See [Shopify/ruby-lsp#3384](https://github.com/Shopify/ruby-lsp/issues/3384).~ This is now working.
+- <s>Changes aren't indexed until Zed is restarted.</s> ([#3384](https://github.com/Shopify/ruby-lsp/issues/3384)). This is now working.
 
 - A debugger is in [beta](https://zed.dev/debugger), and there's a [PR](https://github.com/zed-industries/zed/pull/30126) open for supporting rdbg.
 
