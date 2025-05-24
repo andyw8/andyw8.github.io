@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-(Last updated: 2025-05-07)
+(Last updated: 2025-05-24)
 
 [Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. With recent rapid development in AI, Zed's [close collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes it a strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
@@ -156,7 +156,7 @@ It can sometimes be useful see the underlying requests and responses for the lan
   - Some parts of the LSP specification are not yet implemented in Zed.
 You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed issue to learn more.
 
-- Changes aren't indexed until Zed is restarted. See [Shopify/ruby-lsp#3384](https://github.com/Shopify/ruby-lsp/issues/3384).
+- ~Changes aren't indexed until Zed is restarted. See [Shopify/ruby-lsp#3384](https://github.com/Shopify/ruby-lsp/issues/3384).~ This is now working.
 
 - A debugger is in [beta](https://zed.dev/debugger), and there's a [PR](https://github.com/zed-industries/zed/pull/30126) open for supporting rdbg.
 
