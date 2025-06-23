@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-(Last updated: 2025-06-12)
+(Last updated: 2025-06-22)
 
 [Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. With recent rapid development in AI, Zed's [close collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes it a strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
@@ -123,10 +123,8 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 
 # Other Useful Resources
 
-For ERB, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
-
-To toggle between a test and its implementation, try [zed-test-toggle](https://github.com/MoskitoHero/zed-test-toggle).
-
-For working with Hotwire, there is the [Zed Stimulus](https://github.com/vitallium/zed-stimulus) extension.
-
-For working with Sorbet, there is the [Zed Sorbet](https://github.com/notchairmk/zed-sorbet) extension.
+* For ERB linting, support for Herb has been [merged](https://github.com/zed-extensions/ruby/pull/110) and should ship soon.
+* For ERB formatting, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
+* To toggle between a test and its implementation, try [zed-test-toggle](https://github.com/MoskitoHero/zed-test-toggle).
+* For working with Hotwire, there is the [Zed Stimulus](https://github.com/vitallium/zed-stimulus) extension.
+* Support for Sorbet was previously available in a [separate extension](https://github.com/notchairmk/zed-sorbet) but is now built-in as of v0.9.0 of the Ruby extension.
