@@ -48,52 +48,9 @@ If there are multiple language servers running, then you'll need to first select
 
 If ever it seems that Ruby LSP is not running, this is the first place to check for errors.
 
-# Enabling Diagnostics
+# Enabling Diagnostics (linting)
 
-The Diagnostics feature is used by Ruby LSP to show possible errors as you type, as illustrated [here](https://shopify.github.io/ruby-lsp/#diagnostics).
-
-The implementation uses *pull diagnostics*, a newer aspect of the LSP specification where the client requests diagnostics from the server, instead of the server notifying the client.
-
-There is some [work in progress](https://github.com/zed-industries/zed/pull/19230) for supporting this in Zed, but until then there is a workaround as long as your project uses RuboCop.
-
-**UPDATE:** Support for diagnostics has [shipped](https://bsky.app/profile/vitallium.bsky.social/post/3lre33twwvc2w) in the latest preview edition.
-
-First, a little background: RuboCop [introduced](https://docs.rubocop.org/rubocop/usage/lsp.html) a language server in v1.53, and the Zed extension already has built-in support for it. This language server does _not_ use pull diagnostics, so its diagnostics are compatible with Zed.
-
-Normally when using Ruby LSP we don't need RuboCop's own language server since its built-in, but here it becomes a useful fallback. We can configure Zed such that we use RuboCop's LSP _only_ for diagnostics, and Ruby LSP for everything else. First, we'll disable `diagnostics` for Ruby LSP to avoid sending unnecessary requests:
-
-```json
-{
-  "lsp": {
-    "ruby-lsp": {
-      "initialization_options": {
-        "enabledFeatures": {
-          "diagnostics": false
-        }
-      }
-    }
-  }
-}
-```
-
-Note: The values for `initialization_options` are passed directly to Ruby LSP. You can see the full list [here](https://shopify.github.io/ruby-lsp/editors.html#all-initialization-options).
-
-
-Then we'll add `rubocop` as a secondary language server for Ruby:
-
-```json
-{
-  "languages": {
-    "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop"],
-    }
-  }
-}
-```
-
-Note: Although apparently not documented, it seems that the order is important as only the first language server entry is use for formatting.
-
-If your project uses Standard rather than RuboCop then you can try [this branch](https://github.com/zed-extensions/ruby/pull/25).
+Update: This section previously described a workaround for the lack of pull diagnostics support in Zed, but this has now been implemented and diagnostics are working.
 
 # Disable onTypeFormatting
 
