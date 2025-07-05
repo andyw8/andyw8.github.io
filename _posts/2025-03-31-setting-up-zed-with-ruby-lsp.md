@@ -124,7 +124,7 @@ You can follow [this](https://github.com/zed-industries/zed/issues/26916) Zed is
 # Other Useful Resources
 
 * For ERB linting, support for Herb has been [merged](https://github.com/zed-extensions/ruby/pull/110) and should ship soon.
-* For ERB formatting, [erb-formatter](https://github.com/nebulab/erb-formatter) works well.
+* For ERB formatting, [erb-formatter](https://zed.dev/docs/languages/ruby#erb-formatter) works well.
 * To toggle between a test and its implementation, try [zed-test-toggle](https://github.com/MoskitoHero/zed-test-toggle).
 * For working with Hotwire, there is the [Zed Stimulus](https://github.com/vitallium/zed-stimulus) extension.
 * Support for Sorbet was previously available in a [separate extension](https://github.com/notchairmk/zed-sorbet) but is now built-in as of v0.9.0 of the Ruby extension.
