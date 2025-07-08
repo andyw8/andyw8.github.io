@@ -38,6 +38,8 @@ Clients included:
 
 ### Talks
 
+* [Exploring the Ruby AI Ecosystem](https://toronto-ruby.com/events/may-2025---spring-is-here) (Toronto Ruby, May 2025)
+* [Using Rails introspection to supercharge your editor](https://toronto-ruby.com/events/april-edition) (Toronto Ruby, April 2024)
 * [Improving Code Design With Automated Checks](https://www.slideshare.net/AndyWaite/improving-code-design-with-automated-checks) (Rails Meetup, Shopify, Toronto, June 2019)
 * Programmers Don't Read Books (but they should) (Financeit, Toronto, November 2018)
 * Vim Everywhere (Vim Meetup Group, London, May 2015)
