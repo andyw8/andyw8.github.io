@@ -7,7 +7,7 @@ For the past few weeks I've been using Claude Code extensively in my Ruby develo
 
 Anthropic recently added support for [custom slash commands][1], allowing you to define commonly used prompts as reusable macros.
 
-Based on my experience as a Ruby developer, I've created several specialized commands for typical Ruby project workflows, such as:
+Based on my experience as a Ruby developer, I've created several specialized [commands][3] for typical Ruby project workflows, such as:
 
 * Configuring CI with GitHub Actions (including Ruby matrix builds)
 * Adding RuboCop or Standard
@@ -26,3 +26,4 @@ If you have ideas for additional Ruby-focused slash commands, I'd love to see th
 
 [1]: https://docs.anthropic.com/en/docs/claude-code/slash-commands#custom-slash-commands
 [2]: https://github.com/andyw8/claude_code_slash_commands
+[3]: https://github.com/andyw8/claude_code_slash_commands/tree/main/commands
