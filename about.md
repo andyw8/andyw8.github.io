@@ -8,7 +8,7 @@ I'm a experienced software engineer who helps development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto.
-My most recent position was in the Ruby Developer Experience team at [Shopify].
+My most recent role was in the Ruby Developer Experience team at [Shopify].
 
 * [Resume](https://www.andywaite.com/resume)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
