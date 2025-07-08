@@ -7,14 +7,14 @@ For the past few weeks I've been using Claude Code extensively in my Ruby develo
 
 Anthropic recently added support for [custom slash commands][1], allowing you to define commonly used prompts as reusable macros.
 
-As an experienced Ruby developer, I've created several specialized commands for typical Ruby project workflows:
+Based on my experience Ruby developer, I've created several specialized commands for typical Ruby project workflows, such as:
 
 * Configuring CI with GitHub Actions (including Ruby matrix builds)
 * Adding RuboCop or Standard
 * Bumping the Ruby version across gemspecs, Gemfiles, and CI configs
 * Adding common Ruby gems with appropriate configuration
 
-Although Claude does a reasonable job for these with a zero-shot prompt, the custom commands allow for better adherence to modern best practices, which are often preferrable over what the model was trained on.
+Although Claude does a reasonable job for these with a zero-shot prompt, the custom commands allow for better adherence to modern best practices, which are often preferable over what the model was trained on.
 
 Each command has iteratively refined based on real-world usage across different Ruby projects. (I've found that using bullet-point checklists makes Claude more systematic about following instructions).
 
