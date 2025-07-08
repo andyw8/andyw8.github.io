@@ -20,7 +20,7 @@ Each command has iteratively refined based on real-world usage across different 
 
 As these patterns may be valuable to the broader Ruby community, I built and published a [claude_code_slash_commands][2] gem.
 
-The gem provides a simple `install` command that copies the slash commands to your local `~/.claude/commands` directory. The commands are designed with Ruby development expertise in mind, incorporating industry standards and common patterns I've developed over years of Ruby engineering.
+The gem provides a simple `install` command that copies the slash commands to your local `~/.claude/commands` directory. The commands are designed with Ruby development expertise in mind, incorporating common patterns and approaches.
 
 If you have ideas for additional Ruby-focused slash commands, I'd love to see them! Feel free to open a PR on the [repository][2] to contribute your own commands that could benefit the Ruby community.
 
