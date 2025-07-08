@@ -18,7 +18,7 @@ Although Claude does a reasonable job for these with a zero-shot prompt, the cus
 
 Each command has iteratively refined based on real-world usage across different Ruby projects. (I've found that using bullet-point checklists makes Claude more systematic about following instructions).
 
-As these patterns may be valuable to the broader Ruby community, I built and published a [claude_code_slash_commands][2] gem.
+As these patterns may be valuable to the broader Ruby community, I've published a [claude_code_slash_commands][2] gem (mostly written by Claude Code of course).
 
 The gem provides a simple `install` command that copies the slash commands to your local `~/.claude/commands` directory. The commands are designed with Ruby development expertise in mind, incorporating common patterns and approaches.
 
