@@ -16,7 +16,7 @@ As an experienced Ruby developer, I've created several specialized commands for 
 
 Although Claude does a reasonable job for these with a zero-shot prompt, the custom commands allow for better adherence to modern best practices, which are often preferrable over what the model was trained on.
 
-Each command has iteratively refined based on real-world usage across different Ruby projects. (I've found that using bullet-point checklists makes Claude more systematic in following Ruby best practices).
+Each command has iteratively refined based on real-world usage across different Ruby projects. (I've found that using bullet-point checklists makes Claude more systematic about following instructions).
 
 As these patterns may be valuable to the broader Ruby community, I built and published a [claude_code_slash_commands][2] gem.
 
