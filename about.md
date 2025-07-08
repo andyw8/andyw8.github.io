@@ -4,14 +4,11 @@ title: About
 permalink: /about/
 ---
 
-<img src="https://pbs.twimg.com/profile_images/769618567482503168/TWRr2Fst_400x400.jpg" width="200" height="200" />
-<br/>
-
 I'm a experienced software engineer who helps development teams evolve
 and improve by adopting modern software engineering practices.
 
-I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto,
-where I work in the Ruby Developer Experience team at [Shopify].
+I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto.
+My most recent position was in the Ruby Developer Experience team at [Shopify].
 
 * [Resume](https://www.andywaite.com/resume)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
