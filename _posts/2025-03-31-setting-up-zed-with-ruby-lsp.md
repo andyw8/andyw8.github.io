@@ -4,7 +4,7 @@ title: "Setting up Zed with Ruby LSP"
 date: 2025-03-31
 ---
 
-(Last updated: 2025-07-05)
+(Last updated: 2025-09-04)
 
 [Zed](https://zed.dev) is a modern, high-performance code editor that's gaining popularity. After several years of using VS Code, I've been trying it out for writing Ruby and I've been impressed. With recent rapid development in AI, Zed's [close collaboration with Anthropic](https://zed.dev/blog/zed-ai) makes it a strong contender to VS Code derived editors such as [Cursor](https://www.cursor.com).
 
@@ -54,21 +54,9 @@ Update: This section previously described a workaround for the lack of pull diag
 
 # Disable onTypeFormatting
 
-There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) in Ruby LSP with cursor placement when trying to type a `|` for block arguments, so you may want to disable `onTypeFormatting` for now:
+~There is [known issue](https://github.com/Shopify/ruby-lsp/issues/2971) in Ruby LSP with cursor placement when trying to type a `|` for block arguments, so you may want to disable `onTypeFormatting` for now~
 
-```json
-{
-  "lsp": {
-    "ruby-lsp": {
-      "initialization_options": {
-        "enabledFeatures": {
-          "onTypeFormatting": false,
-        }
-      }
-    }
-  }
-}
-```
+Update: This was [changed](https://github.com/zed-extensions/ruby/pull/142) to be disabled by default in v0.13 of the extension.
 
 # Global vs Local Settings
 
