@@ -157,7 +157,7 @@ Another Code Smell we can detect automatically is Duplicate Code.
 This form of smell would be very difficult to identify in a pull request, unless you had deep knowledge of the existing code.
 Code Climate's [Duplication engine](codeclimate-duplicatio), which uses [flay](https://github.com/seattlerb/flay) underneath, can identify these.
 
-{% twitter https://twitter.com/rubygems/status/250733358307500032 %}
+https://twitter.com/rubygems/status/250733358307500032
 
 These are just a handful of examples of how continuously monitoring your app's code can have a tremendous benefit.
 
