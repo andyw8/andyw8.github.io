@@ -26,9 +26,15 @@ bundle exec jekyll build
 - `*.md` — Top-level pages (about, contact, resume, work)
 - `assets/` — Static assets
 
-## Post Front Matter
+## Creating New Posts
 
-Posts use YAML front matter with at minimum `layout: post` and `title`. Use `published: false` for drafts.
+When creating a new post:
+
+1. Run `date` to verify the current date before naming the file.
+2. Name the file `YYYY-MM-DD-slug.md` under `_posts/`.
+3. Always set `published: false` in the front matter initially.
+
+The target audience is senior/staff developers — assume deep technical knowledge and avoid over-explaining fundamentals.
 
 ## Plugins
 
