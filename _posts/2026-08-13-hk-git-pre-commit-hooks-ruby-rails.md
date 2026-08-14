@@ -33,7 +33,7 @@ Now that more and more code is being written by agents, there is often no editor
 
 The one thing that we should aim for is to **always** catch linting/formatting issues before CI runs, to avoid wasteful cycles.
 
-With hooks, we can have consistency and reliable linting and formatting for both human-authored and agent-authored code.
+With hooks, we can have consistent and reliable linting and formatting for both human-authored and agent-authored code.
 
 ## Introducing hk
 
@@ -127,7 +127,7 @@ If you were using a coding agent, you could let it handle this fix you. And depe
 
 In the past I've used eslint alongside Prettier, but I'm now trying out [biome](https://github.com/biomejs/biome), a Rust-based linter/formatter which supports many frontend technologies including JavaScript, TypeScript, JSX, JSON, CSS and GraphQL.
 
-First we need to add it to our package.json:
+First we need to add it to our `package.json`:
 
 ```
 npm install --save-dev --save-exact @biomejs/biome
