@@ -25,7 +25,7 @@ While you can write hooks by hand, people typically make use of hook manager too
 
 Although git hooks have been around for a long time, I have found that they are not so commonly used. Instead, people would usually rely on their editor for linting, and make use of format-on-save, for example with [Ruby LSP](https://github.com/Shopify/ruby-lsp).
 
-Now that more and more code is being written by agents, there is often no editor tooling involved so that approach fails. You could use a prompt (e.g. in `CLAUDE.md`) to make your agent to be aware of your linting tools, but this is not ideal:
+Now that more and more code is being written by agents, there is often no editor tooling involved so that approach fails. You could use a prompt (e.g. in `CLAUDE.md`) to make your agent aware of your linting/formatting tools, but this is not ideal:
 
 * It's slow. The latency as the agent goes back and forth with the linting/formatting tools is a drag.
 * It's a waste of tokens and context.
