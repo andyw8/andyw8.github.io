@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-* Senior Product engineer at [Rootly](https://rootly.com), Toronto (2025-2026)
+* Senior Product Engineer at [Rootly](https://rootly.com), Toronto (2025-2026)
 * Senior Developer in the Ruby Developer Experience team at [Shopify] (2020-2025)
 * Engineering Lead at [Financeit], Toronto (2016 – 2020)
 
