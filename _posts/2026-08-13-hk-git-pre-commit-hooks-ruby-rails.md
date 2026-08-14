@@ -123,6 +123,25 @@ Since the file is not considered valid, the commit is rejected. We need to manua
 
 If you were using a coding agent, you could let it handle this fix you. And depending on the model's capabilities, it may be be able to check if `# frozen_string_literal: true` is actually safe or not in this case.
 
+## Adding biome
+
+In the past I've used eslint alongside Prettier, but I'm now trying out [biome](https://github.com/biomejs/biome), a Rust-based linter/formatter which supports many frontend technologies including JavaScript, TypeScript, JSX, JSON, CSS and GraphQL.
+
+First we need to add it to our package.json:
+
+```
+npm install --save-dev --save-exact @biomejs/biome
+```
+
+Then it's just a one line addition to our `hk.pkl` config:
+
+```
+local linters = new Mapping<String, Step> {
+    // ...
+    ["biome"] = Builtins.biome
+}
+```
+
 ## Adding Herb
 
 Let's now look at how we could add support for a tool which isn't currently natively supported by `hk`.
@@ -130,23 +149,16 @@ Let's now look at how we could add support for a tool which isn't currently nati
 `hk` has a builtin for `erb` linting, but there's a better, modern linter and formatter for ERB files - [herb](https://herb-tools.dev). Its focus on performance makes it a great match for `hk`.
 
 Although there is a `herb` Ruby gem, the tools we need, `herb-lint` and `herb-format`, are actually npm packages, so we'll first add those to `package.json` as development dependencies:
-
-```json
-{
-  "devDependencies": {
-    "@herb-tools/formatter": "0.10.3",
-    "@herb-tools/linter": "0.10.3"
-  }
-}
+```
+npm install --save-dev --save-exact @herb-tools/formatter
+npm install --save-dev --save-exact @herb-tools/linter
 ```
 
-And as `hk` doesn't have a builtin for `herb`, we'll need to add some custom configuration in `hk.pkl`.
+And as `hk` doesn't have a builtin for `herb`, we'll need to add some custom configuration in `hk.pkl`:
 
 ```pkl
 local linters = new Mapping<String, Step> {
-    ["rubocop_server"] = Builtins.rubocop_server {
-        prefix = "bundle exec"
-    }
+    // ...
     
     ["herb_lint"] {
         glob = List("**/*.html.erb", "**/*.html", "**/*.rhtml", "**/*.turbo_stream.erb")
@@ -166,7 +178,7 @@ local linters = new Mapping<String, Step> {
 
 Note that we prefix the executable calls with `node_modules/.bin/` to prevent unintentionally falling back to globally installed versions, which could be different per machine.
 
-With this set up alongside RuboCop, you'll now have linting and formatting for almost every file in a typical Rails app.
+With the above all set up, you'll now have linting and formatting for almost every file in a typical Rails app.
 
 ## Wrapping Up
 
