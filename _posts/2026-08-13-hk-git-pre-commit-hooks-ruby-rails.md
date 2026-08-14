@@ -39,10 +39,11 @@ With hooks, we can have consistency and reliable linting and formatting for both
 
 [`hk`](https://hk.jdx.dev) is a project by [Jeff Dickey (`jdx`)](https://jdx.dev) who is also the author of [`mise`](https://mise.jdx.dev), a popular tool for managing development environments.
 
-It was first [announced](https://github.com/jdx/mise/discussions/4434) in February 2025. It fills a similar role to the tools listed above, but has two particular areas of emphasis:
+It was first [announced](https://github.com/jdx/mise/discussions/4434) in February 2025. It fills a similar role to the tools listed above, but has some particular areas of emphasis:
 
-- Performance: It's written in Rust and design so that tool can run concurrently.
+- Performance: It's written in Rust and design so that tools can run concurrently, and knows to only run on modified files.
 - Ease of configuration: It includes helpful defaults ("builtins") for a wide variety of ecosystems.
+- Low friction: It handles aspects such as re-staging of fixes, and doesn't get in the way during git operations such as rebasing.
 
 ## Using hk with Ruby
 
