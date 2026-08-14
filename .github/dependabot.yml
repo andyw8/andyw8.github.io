@@ -1,18 +1,16 @@
 version: 2
 updates:
-  - package-ecosystem: "bundler"
+  - package-ecosystem: bundler
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: weekly
     groups:
-      minor-and-patch:
+      patch-and-minor:
         update-types:
-          - "minor"
           - "patch"
-    open-pull-requests-limit: 100
-  - package-ecosystem: "github-actions"
+          - "minor"
+
+  - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: "weekly"
-    reviewers:
-      - "Shopify/ruby-dev-exp"
+      interval: weekly
