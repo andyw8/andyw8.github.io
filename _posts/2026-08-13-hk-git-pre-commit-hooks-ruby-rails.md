@@ -132,7 +132,6 @@ Let's now look at how we could add support for a tool which isn't currently nati
 Although there is a `herb` Ruby gem, the tools we need, `herb-lint` and `herb-format`, are actually npm packages, so we'll first add those to `package.json` as development dependencies:
 
 ```json
-# package.json
 {
   "devDependencies": {
     "@herb-tools/formatter": "0.10.3",
