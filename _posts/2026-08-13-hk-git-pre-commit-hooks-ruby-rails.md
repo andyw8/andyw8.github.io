@@ -3,7 +3,11 @@ layout: post
 title: "Using hk for git pre-commit hooks in Ruby and Rails projects"
 date: 2026-08-14
 published: true
+reddit_url: https://www.reddit.com/r/ruby/comments/1vo9mg3/using_hk_for_git_precommit_hooks_in_ruby_and/
 ---
+
+<a href="{{ page.reddit_url }}" target="_blank" rel="noopener">Discuss this post on Reddit</a>
+  
 ## Introduction
 
 In this post I'll briefly explain what git hooks are, introduce [`hk`](https://hk.jdx.dev), and show some practical examples of using it with Ruby and Rails projects. 
