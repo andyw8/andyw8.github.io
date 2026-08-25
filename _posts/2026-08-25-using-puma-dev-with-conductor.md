@@ -6,15 +6,16 @@ published: true
 ---
 [puma-dev](https://github.com/puma/puma-dev) is a useful tool for Rails developers. It's a successor to [pow](https://github.com/basecamp/pow), an older tool by Basecamp.
 
-Let's say you're working on an app in `~/src/my-app`. If you run `puma-dev link`, it will create a new symlink in `~/.puma-dev/`. You can then access your app on your local machine at `https://my-app.test`, without having to manually start a Rails instance.
-
 puma-dev makes it easy to switch between working on multiple Rails apps in a local environment, without dealing with port conflicts. It also spins down idle apps to save resources.
+
+Let's say you're working on an app in `~/src/myapp`. If you run `puma-dev link`, it will create a new symlink in `~/.puma-dev/`. You can then access your app on your local machine at `https://myapp.test`, without having to manually start a Rails instance.
+
 
 With the emergence of AI agents, it's becoming more common to be working on multiple features concurrently in isolated workspaces by using Git worktrees.
 
 In [Conductor](https://conductor.build) you can specify [scripts](https://www.conductor.build/docs/reference/scripts) to run when setting up a new workspace or archiving an existing one. We can make use of these to set up puma-dev automatically.
 
-Conductor assigns random names to workspaces (from a list of city names). For the hostname, I prefer to prefix the workspace name with my repo name, e.g. `https://my-app-toronto.test`.
+Conductor assigns random names to workspaces (from a list of city names). For the hostname, I prefer to prefix the workspace name with my repo name, e.g. `https://myapp-toronto.test`.
 
 When a workspace is longer needed, e.g. the feature has been merged, the workspace can be archived, and the symlink will be removed from `~/.puma-dev/`.
 
@@ -44,4 +45,6 @@ File.delete(symlink)
 
 You'll also need to make each script executable using `chmod +x`.
 
-To learn more about using Conductor with Rails, check out [Using Conductor.build with Ruby on Rails](https://afomera.dev/posts/2026-02-03-using-conductor-with-ruby-on-rails) by Andrea Fomera.
+To learn more about using Conductor with Rails, check out:
+- [Using Conductor.build with Ruby on Rails](https://afomera.dev/posts/2026-02-03-using-conductor-with-ruby-on-rails) by Andrea Fomera.
+- [Conducting Rails](https://www.johnnunemaker.com/conducting-rails/) by John Nunemaker.
