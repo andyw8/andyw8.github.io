@@ -81,8 +81,9 @@ We'll start with RuboCop, since it's so common in the Ruby world. Let's add a st
 
 ```pkl
 local linters = new Mapping<String, Step> {
-["rubocop_server"] = Builtins.rubocop_server {
-    prefix = "bundle exec"
+    ["rubocop_server"] = Builtins.rubocop_server {
+        prefix = "bundle exec"
+    }
 }
 ```
 
