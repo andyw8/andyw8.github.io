@@ -187,4 +187,4 @@ With the above all set up, you'll now have linting and formatting for almost eve
 
 ## Wrapping Up
 
-Along with `mise`, `hk` has become one the tools that I rely on every day as a developer. Whether your writing code by hand, or using an agent, it will catch linting and formatting issues quickly and effectively, allowing you to focus on the more interesting things.
+Along with `mise`, `hk` has become one of the tools that I rely on every day as a developer. Whether your writing code by hand, or using an agent, it will catch linting and formatting issues quickly and effectively, allowing you to focus on the more interesting things.
