@@ -79,7 +79,9 @@ The default `hk.pkl` has no active steps, so by default it does nothing.
 
 ## Adding RuboCop
 
-`hk` configuration uses a shared top-level `steps` block, which creates implicit `check`, `fix`, and `pre-commit` hooks. Let's add a step for RuboCop:
+We'll start with RuboCop, since it's so common in the Ruby world. Let's add a step for it:
+
+`hk` configuration uses a shared top-level `steps` block, which creates implicit `check`, `fix`, and `pre-commit` hooks.
 
 ```pkl
 steps {
