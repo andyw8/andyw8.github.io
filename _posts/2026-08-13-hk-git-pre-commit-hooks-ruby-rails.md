@@ -89,11 +89,10 @@ steps {
 }
 ```
 
-Three things to note:
+Two things to note:
 
 * We are using `rubocop_server` instead of RuboCop, to avoid the startup overhead.
 * We are prefixing the command to ensure it uses the RuboCop version from `Gemfile.lock`, rather than the latest installed gem version.
-* The builtin's commands are structured `Command`s rather than shell strings, so the prefix must be given as a list of arguments (`List("bundle", "exec")`) rather than a single string, to preserve argument boundaries.
 
 Note that we don't have to specify the RuboCop command or flags, or be aware of subtleties like the [`--force-exclusion` flag](https://docs.rubocop.org/rubocop/latest/configuration/include_exclude.html). It's already defined as part of the builtin.
 
