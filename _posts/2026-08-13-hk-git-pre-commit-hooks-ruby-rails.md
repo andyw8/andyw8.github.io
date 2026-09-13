@@ -8,7 +8,7 @@ reddit_url: https://www.reddit.com/r/ruby/comments/1vo9mg3/using_hk_for_git_prec
 
 <a href="{{ page.reddit_url }}" target="_blank" rel="noopener">Discuss this post on Reddit</a>
 
-> **Update (Sep 2026):** Updated for [hk v2.0.0](https://github.com/jdx/hk/releases/tag/v2.0.0), which introduced a shared top-level `steps` block, changed staging behaviour, and fixed the `rubocop_server` builtin so its checks and fixes actually run. The examples below use the new style.
+> **Update (Sep 2026):** Updated for [hk v2.0.0](https://github.com/jdx/hk/releases/tag/v2.0.0), which introduced a shared top-level `steps` block and changed staging behaviour. It also includes a fix I [contributed](https://github.com/jdx/hk/pull/1355) so the `rubocop` and `rubocop_server` runs properly. The examples below use the new style.
 
 ## Introduction
 
