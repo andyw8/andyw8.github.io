@@ -65,7 +65,7 @@ It was first [announced](https://github.com/jdx/mise/discussions/4434) in Februa
 - [sorbet](https://hk.jdx.dev/builtins.html#sorbet)
 - [standard-rb](https://hk.jdx.dev/builtins.html#standard-rb)
 
-(I [contributed](https://github.com/jdx/hk/pull/995) `rubocop-server` to take advantage of RuboCop's [`--server` mode](https://docs.rubocop.org/rubocop/latest/usage/server.html), and [fixed](https://github.com/jdx/hk/pull/1355) the `rubocop`/`rubocop_server` builtins in v2, which previously used `--list-target-files` to check for files — that always exits with a zero status, so hk skipped the check/fix commands entirely and would let offenses through).
+(I [contributed](https://github.com/jdx/hk/pull/995) `rubocop-server` to take advantage of RuboCop's [`--server` mode](https://docs.rubocop.org/rubocop/latest/usage/server.html), and [fixed](https://github.com/jdx/hk/pull/1355) the `rubocop`/`rubocop_server` builtins, which previously used `--list-target-files` to check for files — that always exits with a zero status, so hk skipped the check/fix commands entirely and would let offenses through).
 
 ## Getting Started
 
@@ -79,7 +79,7 @@ The default `hk.pkl` has no active steps, so by default it does nothing.
 
 ## Adding RuboCop
 
-Since hk v2, configuration uses a shared top-level `steps` block, which creates implicit `check`, `fix`, and `pre-commit` hooks. Let's add a step for RuboCop:
+`hk` configuration uses a shared top-level `steps` block, which creates implicit `check`, `fix`, and `pre-commit` hooks. Let's add a step for RuboCop:
 
 ```pkl
 steps {
@@ -93,7 +93,7 @@ Three things to note:
 
 * We are using `rubocop_server` instead of RuboCop, to avoid the startup overhead.
 * We are prefixing the command to ensure it uses the RuboCop version from `Gemfile.lock`, rather than the latest installed gem version.
-* Since v2, the builtin's commands are structured `Command`s rather than shell strings, so the prefix must be given as a list of arguments (`List("bundle", "exec")`) rather than a single string, to preserve argument boundaries.
+* The builtin's commands are structured `Command`s rather than shell strings, so the prefix must be given as a list of arguments (`List("bundle", "exec")`) rather than a single string, to preserve argument boundaries.
 
 Note that we don't have to specify the RuboCop command or flags, or be aware of subtleties like the [`--force-exclusion` flag](https://docs.rubocop.org/rubocop/latest/configuration/include_exclude.html). It's already defined as part of the builtin.
 
