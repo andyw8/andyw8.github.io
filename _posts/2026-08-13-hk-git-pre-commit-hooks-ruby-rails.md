@@ -7,7 +7,9 @@ reddit_url: https://www.reddit.com/r/ruby/comments/1vo9mg3/using_hk_for_git_prec
 ---
 
 <a href="{{ page.reddit_url }}" target="_blank" rel="noopener">Discuss this post on Reddit</a>
-  
+
+> **Update (Sep 2026):** Updated for [hk v2.0.0](https://github.com/jdx/hk/releases/tag/v2.0.0), which introduced a shared top-level `steps` block, changed staging behaviour, and fixed the `rubocop_server` builtin so its checks and fixes actually run. The examples below use the new style.
+
 ## Introduction
 
 In this post I'll briefly explain what git hooks are, introduce [`hk`](https://hk.jdx.dev), and show some practical examples of using it with Ruby and Rails projects. 
@@ -63,7 +65,7 @@ It was first [announced](https://github.com/jdx/mise/discussions/4434) in Februa
 - [sorbet](https://hk.jdx.dev/builtins.html#sorbet)
 - [standard-rb](https://hk.jdx.dev/builtins.html#standard-rb)
 
-(I [contributed](https://github.com/jdx/hk/pull/995) `rubocop-server` to take advantage of RuboCop's [`--server` mode](https://docs.rubocop.org/rubocop/latest/usage/server.html)).
+(I [contributed](https://github.com/jdx/hk/pull/995) `rubocop-server` to take advantage of RuboCop's [`--server` mode](https://docs.rubocop.org/rubocop/latest/usage/server.html), and [fixed](https://github.com/jdx/hk/pull/1355) the `rubocop`/`rubocop_server` builtins in v2, which previously used `--list-target-files` to check for files — that always exits with a zero status, so hk skipped the check/fix commands entirely and would let offenses through).
 
 ## Getting Started
 
@@ -77,20 +79,21 @@ The default `hk.pkl` has no active steps, so by default it does nothing.
 
 ## Adding RuboCop
 
-We'll start with RuboCop, since it's so common in the Ruby world. Let's add a step for it:
+Since hk v2, configuration uses a shared top-level `steps` block, which creates implicit `check`, `fix`, and `pre-commit` hooks. Let's add a step for RuboCop:
 
 ```pkl
-local linters = new Mapping<String, Step> {
-    ["rubocop_server"] = Builtins.rubocop_server {
-        prefix = "bundle exec"
+steps {
+    ["rubocop_server"] = (Builtins.rubocop_server) {
+        prefix = List("bundle", "exec")
     }
 }
 ```
 
-Two things to note:
+Three things to note:
 
 * We are using `rubocop_server` instead of RuboCop, to avoid the startup overhead.
 * We are prefixing the command to ensure it uses the RuboCop version from `Gemfile.lock`, rather than the latest installed gem version.
+* Since v2, the builtin's commands are structured `Command`s rather than shell strings, so the prefix must be given as a list of arguments (`List("bundle", "exec")`) rather than a single string, to preserve argument boundaries.
 
 Note that we don't have to specify the RuboCop command or flags, or be aware of subtleties like the [`--force-exclusion` flag](https://docs.rubocop.org/rubocop/latest/configuration/include_exclude.html). It's already defined as part of the builtin.
 
@@ -141,7 +144,7 @@ npm install --save-dev --save-exact @biomejs/biome
 Then it's just a one line addition to our `hk.pkl` config:
 
 ```
-local linters = new Mapping<String, Step> {
+steps {
     // ...
     ["biome"] = Builtins.biome
 }
@@ -162,7 +165,7 @@ npm install --save-dev --save-exact @herb-tools/linter
 And as `hk` doesn't have a builtin for `herb`, we'll need to add some custom configuration in `hk.pkl`:
 
 ```pkl
-local linters = new Mapping<String, Step> {
+steps {
     // ...
     
     ["herb_lint"] {
