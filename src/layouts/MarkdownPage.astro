@@ -1,0 +1,19 @@
+---
+import { render } from 'astro:content';
+import Page from './Page.astro';
+import { getPage } from '../lib/posts';
+
+interface Props {
+	/** Content collection entry id, e.g. `about`. */
+	id: string;
+	canonicalPath: string;
+}
+
+const { id, canonicalPath } = Astro.props;
+const entry = await getPage(id);
+const { Content } = await render(entry);
+---
+
+<Page title={entry.data.title} description={entry.data.description} canonicalPath={canonicalPath}>
+	<Content />
+</Page>

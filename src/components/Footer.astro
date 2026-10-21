@@ -1,0 +1,33 @@
+---
+import { SITE_EMAIL, SITE_GITHUB, SITE_TITLE } from '../consts';
+
+const today = new Date();
+---
+
+<footer>
+	<p>
+		&copy; {today.getFullYear()} {SITE_TITLE}
+		&middot;
+		<a href={`mailto:${SITE_EMAIL}`}>{SITE_EMAIL}</a>
+		&middot;
+		<a href={SITE_GITHUB} target="_blank" rel="noopener">GitHub</a>
+	</p>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	footer p {
+		margin: 0;
+	}
+	footer a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	footer a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>

@@ -59,7 +59,7 @@ However, I often run into problems with it, so I was on the fence about includin
 
 It's not as powerful as [Sorbet](https://sorbet.org/), so it's unable to infer types unless they are a Ruby primitive (String, Array, etc.)
 
-![Solargraph example](images/solargraph-example.png)
+![Solargraph example](/assets/images/solargraph-example.png)
 
 ### And more
 
