@@ -187,6 +187,8 @@ steps {
 
 Note that we prefix the executable calls with `node_modules/.bin/` to prevent unintentionally falling back to globally installed versions, which could be different per machine.
 
+It's important not to omit the `{{ files }}` placeholder. If you leave it out, `hk` runs the command without passing any file arguments, so tools which fall back to reading from stdin (as `herb-format` does) will fail — for example, `herb-format --check` raises `--check mode is not supported with stdin`. With `{{ files }}` in place, `hk` expands it into the selected files as arguments.
+
 With the above all set up, you'll now have linting and formatting for almost every file in a typical Rails app.
 
 ## Wrapping Up
