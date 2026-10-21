@@ -44,7 +44,7 @@ npm run preview
 ## Drafts
 
 - `published: false` (Jekyll) and `draft: true` (Astro) both hide a post from production builds.
-- Drafts are rendered and listed on the homepage when running `npm run dev`, marked "(draft)". They never reach `dist/` in a production build.
+- Drafts are rendered at their `.html` URL when running `npm run dev`, so you can preview them, but they are never listed on the homepage and never reach `dist/` in a production build.
 
 ## Creating New Posts
 
