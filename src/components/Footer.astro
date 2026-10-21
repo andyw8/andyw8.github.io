@@ -1,5 +1,6 @@
 ---
-import { SITE_EMAIL, SITE_GITHUB, SITE_TITLE } from '../consts';
+import { SITE_EMAIL, SITE_TITLE } from '../consts';
+import SocialLinks from './SocialLinks.astro';
 
 const today = new Date();
 ---
@@ -9,9 +10,10 @@ const today = new Date();
 		&copy; {today.getFullYear()} {SITE_TITLE}
 		&middot;
 		<a href={`mailto:${SITE_EMAIL}`}>{SITE_EMAIL}</a>
-		&middot;
-		<a href={SITE_GITHUB} target="_blank" rel="noopener">GitHub</a>
 	</p>
+	<div class="footer-socials">
+		<SocialLinks />
+	</div>
 </footer>
 <style>
 	footer {
@@ -29,5 +31,11 @@ const today = new Date();
 	}
 	footer a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	.footer-socials {
+		display: flex;
+		justify-content: center;
+		margin-top: 0.75em;
+		--social-icon-size: 22px;
 	}
 </style>
