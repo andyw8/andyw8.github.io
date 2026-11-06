@@ -1,0 +1,18 @@
+---
+interface Props {
+	date: Date;
+}
+
+const { date } = Astro.props;
+
+const isoDate = date.toISOString().slice(0, 10);
+const displayDate = date.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'short',
+	day: 'numeric',
+	// Post dates are date-only values stored as UTC midnight.
+	timeZone: 'UTC',
+});
+---
+
+<time datetime={isoDate}>{displayDate}</time>

@@ -1,0 +1,29 @@
+---
+import { render } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
+import { getPosts, postHref, type Post } from '../lib/posts';
+
+export async function getStaticPaths() {
+	// Drafts are available while running `npm run dev`, but never in a build.
+	const posts = await getPosts({ includeDrafts: import.meta.env.DEV });
+
+	return posts.map((post) => ({
+		params: {
+			// `build.format: 'preserve'` appends `.html`, giving the legacy URL.
+			path: postHref(post).replace(/^\//, '').replace(/\.html$/, ''),
+		},
+		props: { post },
+	}));
+}
+
+interface Props {
+	post: Post;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+	<Content />
+</BlogPost>

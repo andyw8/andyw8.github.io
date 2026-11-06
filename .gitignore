@@ -1,4 +1,10 @@
-_site
-.sass-cache
-.jekyll-metadata
-.tweet-cache
+node_modules/
+dist/
+.astro/
+
+.DS_Store
+.env
+.env.*
+
+# Override a machine-global ignore of /src/
+!/src/
