@@ -1,5 +1,5 @@
 ---
-import { SITE_EMAIL, SITE_TITLE } from '../consts';
+import { SITE_TITLE } from '../consts';
 import SocialLinks from './SocialLinks.astro';
 
 const today = new Date();
@@ -8,8 +8,6 @@ const today = new Date();
 <footer>
 	<p>
 		&copy; {today.getFullYear()} {SITE_TITLE}
-		&middot;
-		<a href={`mailto:${SITE_EMAIL}`}>{SITE_EMAIL}</a>
 	</p>
 	<div class="footer-socials">
 		<SocialLinks />
