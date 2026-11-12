@@ -5,7 +5,7 @@ export async function GET(context: APIContext) {
 	const site = context.site ?? new URL('https://andywaite.com');
 	const posts = await getPosts();
 
-	const pages = ['/', '/about/', '/contact/', '/work/'].map((path) => ({
+	const pages = ['/', '/about/', '/projects/', '/contact/', '/work/'].map((path) => ({
 		loc: new URL(path, site).href,
 		lastmod: undefined,
 	}));
