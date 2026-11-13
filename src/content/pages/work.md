@@ -28,13 +28,6 @@ Clients included:
 * [techradar.io] (Rails) (2014)
 * [Continuous Quality] (Writing) (2014)
 
-### Open Source
-
-* [codeclimate-engine-rb](https://github.com/andyw8/codeclimate-engine-rb) (Ruby)
-* [techradar.io](https://github.com/andyw8/techradar) (Ruby, Rails)
-* [do_by](https://github.com/andyw8/do_by) (Ruby)
-* [capybara-page-object](https://github.com/andyw8/capybara-page-object) (Ruby)
-
 ### Talks
 
 * [Exploring the Ruby AI Ecosystem](https://toronto-ruby.com/events/may-2025---spring-is-here) (Toronto Ruby, May 2025)
@@ -45,8 +38,6 @@ Clients included:
 * [An i18n Journey](http://www.slideshare.net/andyw8/an-i18njourney) (Hashrocket, Chicago, November 2013)
 * An Introduction to CoffeeScript (NotOnTheHighStreet, London, April 2013)
 * [Contributing to Open Source using GitHub](http://www.slideshare.net/andyw8/contributing-to-open-source-via-github) (BBC Future Media, London, June 2012)
-
-See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other OSS contributions.
 
 ### Retired Personal Projects
 

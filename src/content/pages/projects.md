@@ -33,3 +33,9 @@ A Rails app for chatting with LLM models, built on [ruby_llm](https://github.com
 ## Other Projects
 
 * [agent-skills](https://github.com/andyw8/agent-skills)
+* [codeclimate-engine-rb](https://github.com/andyw8/codeclimate-engine-rb) (Ruby)
+* [techradar.io](https://github.com/andyw8/techradar) (Ruby, Rails)
+* [do_by](https://github.com/andyw8/do_by) (Ruby)
+* [capybara-page-object](https://github.com/andyw8/capybara-page-object) (Ruby)
+
+See my [GitHub Activity Feed](https://github.com/andyw8?tab=activity) for other OSS contributions.
