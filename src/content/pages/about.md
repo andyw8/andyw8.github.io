@@ -8,7 +8,7 @@ I'm a experienced software engineer who helps development teams evolve
 and improve by adopting modern software engineering practices.
 
 I've been part of teams in London, Edinburgh, New York City, Berlin and currently Toronto.
-My most recent role was in the Ruby Developer Experience team at [Shopify].
+My most recent role was as a Product Engineer at [Rootly].
 
 * [Resume](https://www.andywaite.com/resume)
 * [LinkedIn](https://www.linkedin.com/in/andyw8)
@@ -71,7 +71,7 @@ Below are some of my areas of expertise:
 Check my [Past Work](/work) to see the clients I've worked with.
 
 [Financeit]: https://financeit.io
-[Shopify]: https://shopify.com
+[Rootly]: https://rootly.com
 
 ## Trivia
 
