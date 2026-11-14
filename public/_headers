@@ -1,3 +1,0 @@
-# Astro emits content-hashed files under /_astro, so they can be cached forever.
-/_astro/*
-  Cache-Control: public, max-age=31536000, immutable
