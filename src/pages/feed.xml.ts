@@ -17,6 +17,9 @@ export async function GET(context: APIContext) {
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
 		site: context.site ?? 'https://andywaite.com',
+		// Post URLs have no file extension, so the default (append a trailing
+		// slash) would point at a directory that does not exist.
+		trailingSlash: false,
 		items: posts.map((post) => ({
 			title: postTitle(post),
 			pubDate: postDateObject(post),

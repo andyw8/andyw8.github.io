@@ -47,12 +47,18 @@ export function postCategories(post: Post): string[] {
 }
 
 /**
- * The exact legacy permalink, e.g. `/rspec/bdd/testing/2013/02/21/playing-with-rspec-fire.html`.
+ * The canonical post URL, e.g. `/rspec/bdd/testing/2013/02/21/playing-with-rspec-fire`.
+ *
+ * The file on disk is still `.../playing-with-rspec-fire.html`, because
+ * `build.format: 'preserve'` keeps that layout. Cloudflare Pages serves an HTML
+ * file at its extension-less path and 308-redirects requests for the `.html`
+ * form, so linking to the extension-less path avoids a redirect hop. The
+ * original Jekyll `.html` URLs therefore still resolve, via that redirect.
  */
 export function postHref(post: Post): string {
 	const { year, month, day } = postDate(post);
 	const segments = [...postCategories(post), year, month, day, postSlug(post)];
-	return `/${segments.join('/')}.html`;
+	return `/${segments.join('/')}`;
 }
 
 export function postTitle(post: Post): string {
